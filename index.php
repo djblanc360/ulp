@@ -23,7 +23,7 @@ get_header();
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<!-- ADD OVERLAY HERE -->
+	<!-- ADD OVERLAY HERE TESTING-->
 
     <div class="ms-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
