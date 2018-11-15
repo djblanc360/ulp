@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ulp' ); ?></a>
 
 	<?php if(is_page('home')) { ?>
-		
+
 		<section id="homeIntro" class="d-flex align-items-center justify-content-center" style="background-image:url(<?php the_field('home_intro_img'); ?>);">
 			<div class="homeIntroInner text-center">
 				<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/ulp-intro-logo.png" alt="University Lab Partners at UC Irvine" class="mx-auto">
@@ -35,15 +35,15 @@
 
 	<?php } elseif (is_singular( array( 'events', 'members' ) )) { ?>
 
-	<? } else { ?>
-		
+	<?php } else { ?>
+
 		<section id="pageIntro" style="background-image:url(<?php echo site_url(); ?>/wp-content/uploads/2018/11/ulp-page-header.jpg);">
 			<header class="entry-header container">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 		</section>
 
-	<? } ?>
+	<?php } ?>
 
 	<header id="masthead" class="site-header">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
