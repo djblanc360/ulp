@@ -18,7 +18,9 @@ div.ms-item
     position:relative;
 }
 
-
+.post-text {
+  color: #0A2B4E;
+}
 
 .ms-item:hover  {
   background-color: #0A2B4E;
@@ -28,22 +30,26 @@ div.ms-item
 
 
 /* LINK STYLING */
+.ms-item a {
+  color: #0A2B4E;
+  text-decoration: none;
+}
 
 .ms-item a:visited
 {
-
+  text-decoration: none;
 }
 
 .ms-item a:hover {
-
+  text-decoration: none;
 }
 
 .ms-item a:active {
-
+  text-decoration: none;
 }
 
 .post-title {
-  color: #0A2B4E;
+
 }
 /* END STYLING */
 
