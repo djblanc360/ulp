@@ -18,10 +18,6 @@ div.ms-item
     position:relative;
 }
 
-.post-text {
-  color: #0A2B4E;
-}
-
 .ms-item:hover  {
   background-color: #0A2B4E;
   color:#FDB827;
@@ -49,7 +45,10 @@ div.ms-item
 }
 
 .post-title {
-
+  color: #0A2B4E;
+}
+.post-text {
+  color: #0A2B4E;
 }
 /* END STYLING */
 
