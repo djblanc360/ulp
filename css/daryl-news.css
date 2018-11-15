@@ -31,6 +31,10 @@ div.ms-item
   border: 2px solid white;
 }
 
+.ms-item:hover .post-text {
+  color: white;
+}
+
 /* LINK STYLING */
 .ms-item a {
   color: #0A2B4E;
