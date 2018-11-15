@@ -1,0 +1,147 @@
+
+/* Makes three columns */
+.ms-item {
+width: 30%;
+border: 2px solid #333;
+border-color: #E8E8E8;
+border-radius: 5px;
+height: auto;
+padding: 1rem;
+margin: 1rem;
+}
+
+div.ms-item
+{
+    display:block;
+    position:relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0A2B4E;
+}
+
+.ms-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  -webkit-transform: translate(-20%, -30%);
+  -ms-transform: translate(-20%, -30%);
+  transform: translate(-20%, -30%);
+}
+
+/* LINK STYLING */
+.overlay-title a
+{
+    color: white;
+}
+.overlay-title a:visited
+{
+    color: white;
+}
+
+.overlay-title a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* selected link */
+.overlay-title a:active {
+    color: white;
+}
+.overlay-link a
+{
+    color: #fdc95a;
+}
+.overlay-link a:visited
+{
+    color: #fdc95a;
+}
+
+.overlay-link a:hover {
+  text-decoration: none;
+  color: #fdc95a;
+}
+
+/* selected link */
+.overlay-link a:active {
+    color: #fdc95a;
+}
+
+/* END STYLING */
+
+#ms-container {
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+h2 {
+  margin-top: 2rem;
+  padding-top: 2rem:
+  text-transform: uppercase;
+  color: #0A2B4E ;
+  text-align: center;
+
+}
+
+.container {
+  width:90%;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.read-more-button {
+  border: 2px solid #0A2B4E;
+  padding: 10px;
+  border-radius: 25px;
+}
+a .read-more-button {
+    color: #0A2B4E;
+}
+
+hr {
+  border-color:#fdc95a;
+}
+
+.pagination-buttons {
+
+  text-decoration: none;
+  width:100px;
+  height:100px;
+}
+.pagination-buttons a {
+  color: white;
+  text-decoration: none;
+  background-color: #0A2B4E;
+  padding: 15px;
+}
+
+.pagination-buttons a:hover {
+  color: #0A2B4E;
+  text-decoration: none;
+  background-color: #FDB827;
+}
+.pagination-buttons a:active {
+  color:  #0A2B4E;
+  text-decoration: none;
+  background-color: #FDB827;
+}
+
+.news-navigation {
+  margin-left: 50%;
+  margin-top: 2rem;
+}

@@ -1,0 +1,40 @@
+.page-template-page-events .upRecentEventsContainerInner{padding:15rem 1rem 1rem 1rem;background-color:#0a2b4e;border-radius:5px;background-size:cover;background-position:center}
+.page-template-page-events .upRecentEventsContainerInner h2{margin-bottom:4rem;color:#fff}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem{margin-top:15px;border-radius:5px;overflow:hidden;background:#f2f2f2;position:relative}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem h4 a{color:#0a2b4e}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem h4 a:hover,.page-template-page-events .upRecentEventsContainerInner .upFeedItem h4 a:visited{color:#0a2b4e;text-decoration:none}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem .newEventImage{position:absolute;top:0;bottom:0;width:100%;background-size:cover;background-position:center}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem .newEventImage .newEventImageLink{position:absolute;top:0;bottom:0;right:0;left:0}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem .newEventText{padding:15px}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem p{margin-bottom:.25rem}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem p a{display:inline-block}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem .postTime{font-style:italic}
+.page-template-page-events .upRecentEventsContainerInner .upFeedItem .postReadMore a{font-weight:bold;color:#fdb827;margin-bottom:0}
+.page-template-page-events #pastEvents .pastEventContainer{position:relative;overflow:hidden;background-color:#f2f2f2;border-radius:5px;margin-bottom:15px;padding-top:20rem;background-size:cover;background-position:center;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.page-template-page-events #pastEvents .pastEventContainer:hover{-webkit-box-shadow:0 0 25px -5px #000;box-shadow:0 0 25px -5px #000}
+.page-template-page-events #pastEvents .pastEventContainer h3{font-size:1rem}
+.page-template-page-events #pastEvents .pastEventContainer .pastEventTeaser{position:absolute;left:0;bottom:0;right:0;padding:1rem;background:#0a2b4e;color:#fff}
+.page-template-page-events #pastEvents .pastEventContainer .pastEventDate{text-transform:uppercase;color:#fdb827;font-size:.75rem;margin-bottom:0}
+.single-events #eventHeader{background-size:cover;background-position:center;padding-top:8rem;padding-bottom:8rem;position:relative}
+.single-events #eventHeader .cover{position:absolute;top:0;left:0;bottom:0;right:0;background-color:rgba(0,0,0,0.6);z-index:1}
+.single-events #eventHeader .eventHeaderText{position:relative;z-index:2}
+.single-events #eventHeader .eventHeaderText h1,.single-events #eventHeader .eventHeaderText p{margin-top:0;margin-bottom:0;color:#fff}
+.single-events #eventHeader .eventHeaderText p.bookNow{margin-top:1rem}
+.single-events .memberContainer{padding-bottom:2rem}
+.single-events .eventItemImgContainer{position:relative}
+.single-events .eventItemImgContainer .eventItemGallery{position:relative}
+.single-events .eventItemImgContainer .eventItemGallery .slick-arrow{position:absolute;z-index:1;top:43%;padding:15px;background:rgba(0,0,0,0.4);color:#fff;opacity:.6}
+.single-events .eventItemImgContainer .eventItemGallery .slick-arrow:hover{opacity:1;cursor:pointer}
+.single-events .eventItemImgContainer .eventItemGallery .slick-prev{left:0}
+.single-events .eventItemImgContainer .eventItemGallery .slick-next{right:0}
+.single-events .eventItemImgContainer .eventItemGallery .eventItemGalleryImg{background-size:cover;background-position:center;height:350px}
+.single-events .eventItemImgContainer .eventItemGalleryNav{margin-top:5px}
+.single-events .eventItemImgContainer .eventItemGalleryNav img{margin:5px}
+.single-events .eventItemImgContainer .eventItemGalleryNav .slick-arrow{position:absolute;z-index:1;top:40%;padding:5px;color:#000;opacity:.2}
+.single-events .eventItemImgContainer .eventItemGalleryNav .slick-arrow:hover{opacity:1;cursor:pointer}
+.single-events .eventItemImgContainer .eventItemGalleryNav .slick-prev{left:-20px}
+.single-events .eventItemImgContainer .eventItemGalleryNav .slick-next{right:-20px}
+.single-events .eventQuickInfo{margin-top:40px;border:3px dotted #0a2b4e;padding:15px;border-radius:15px}
+.single-events .eventQuickInfo .eventQuickInfoInner .eventInfoList{margin-left:0;padding-left:0;margin-bottom:0;list-style:none}
+.single-events .eventQuickInfo .eventQuickInfoInner .eventInfoList .eventInfoItem{margin-left:0;padding-left:0;font-size:.8rem}
+.single-events .eventMap{margin-top:40px}

@@ -1,0 +1,40 @@
+#masthead.sticky{position:fixed;width:100%;left:0;top:0;z-index:100;border-top:0}
+#masthead .navbar-nav .nav-item{padding-left:.5rem;padding-right:.5rem}
+#masthead .navbar-nav .nav-item:last-child{padding-right:0}
+#masthead .navbar-nav .nav-item:last-child a{padding:10px 25px;border-radius:25px;border:2px solid #fdb827;color:#fff;background-color:#fdb827;text-decoration:none;text-transform:uppercase;display:inline-block;font-size:.8rem;font-weight:bold}
+#masthead .navbar-nav .nav-item:last-child a:hover{background-color:#fdc95a}
+footer#colophon{background-color:#0a2b4e;color:#fff;padding-top:2rem;padding-bottom:2rem}
+footer#colophon h2,footer#colophon h4{font-size:1.25rem}
+footer#colophon a{color:#fff;text-decoration:none}
+footer#colophon a:hover,footer#colophon a:visited,footer#colophon a:active{color:#fff;text-decoration:none}
+footer#colophon .site-info{font-size:.75rem;text-align:center}
+footer#colophon .footerLeftCoInfo p,footer#colophon .footerLeftCoInfo address{margin-bottom:0}
+footer#colophon .footerSocialList{margin-left:0;text-align:center}
+footer#colophon .footerSocialList li{display:inline-block}
+footer#colophon .footerSocialList li a{width:60px;height:60px;background:#fdb827;padding:1rem;text-align:center;border-radius:50%;color:#fff;margin-left:5px;margin-right:5px;display:inline-block}
+footer#colophon .footerSocialList li a i{font-size:1.5rem;color:#fff}
+body{font-family:'Libre Baskerville',serif}
+body h2{margin-bottom:2rem}
+body p,body li,body address{font-family:'Helvetica',Arial,sans-serif}
+body ul{margin-left:0;text-align:left}
+body hr{border-top:1px solid #ddd}
+section{padding-top:4rem;padding-bottom:4rem}
+.button{padding:10px 25px;border-radius:25px;border:2px solid #0a2b4e;color:#0a2b4e;text-decoration:none;text-transform:uppercase;display:inline-block;font-size:.8rem;font-weight:bold;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.button:hover{text-decoration:none;background-color:#0a2b4e;color:#fff}
+.button:visited{color:#0a2b4e}
+.button:visited:hover{color:#fff}
+.button.cta{color:#fff;background-color:#fdb827;border-color:#fdb827}
+.button.cta:hover{background-color:transparent;color:#fdb827}
+.button.white{color:#fff;background-color:transparent;border-color:#fff}
+.button.white:hover{background-color:#fff;color:#0a2b4e}
+#singleCustomBreadcrumbs{margin-top:1rem;text-transform:uppercase;font-size:.8rem}
+.singleCustomHeader{margin-top:2rem;margin-bottom:1rem}
+.slick-dots{margin-left:0;padding-left:0;text-align:center;list-style:none}
+.slick-dots li{display:inline-block;width:10px;height:10px;content:' ';padding:0;color:transparent;border-radius:50%;border:0;margin:5px;background:#ddd}
+.slick-dots li button{display:none}
+.slick-dots li.slick-active{background-color:#999}
+.slick-dots li:hover{cursor:pointer}
+.slick-dots li:focus,.slick-dots li:active{outline:0}
+#pageIntro{background-color:#0a2b4e;background-size:cover;background-position:center;padding-top:6rem;padding-bottom:2rem}
+#pageIntro h1{color:#fdb827;text-transform:uppercase}
+#footMap{padding-top:0;padding-bottom:0}

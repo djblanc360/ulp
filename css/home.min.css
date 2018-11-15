@@ -1,0 +1,25 @@
+.page-template-page-home #homeIntro{background-color:#0a2b4e;height:85vh;background-position:center;background-size:cover}
+.page-template-page-home #homeIntro .homeIntroInner .button.white{margin-right:1rem}
+.page-template-page-home #homeWelcome .ulp-welcome-logo{width:186px;display:block;margin:auto}
+.page-template-page-home #homeFeatureThree .homeFeatureContainer{background-color:#0a2b4e;background-size:cover;background-position:center;border-radius:5px;color:#fff;padding:2rem}
+.page-template-page-home #homeFeatureThree .homeFeatureContainer .homeFeatureIconContainer{border-radius:50%;width:100px;height:100px;margin:2rem auto 4rem auto;overflow:hidden;background:rgba(255,255,255,0.2)}
+.page-template-page-home #homeFeatureThree .homeFeatureContainer .homeFeatureIconContainer i{font-size:2rem}
+.page-template-page-home #homeFeatureThree .homeFeatureContainer .button.cta{color:#0a2b4e}
+.page-template-page-home #homeFeatureThree .homeFeatureContainer .button.cta:hover{color:#fdb827}
+.page-template-page-home #homeNews{background:#f2f2f2;color:#0a2b4e}
+.page-template-page-home #homeNews .homeNewsPostContainer{margin-bottom:15px}
+.page-template-page-home #homeNews .homeNewsPostContainer .homeNewsThumbContainer{position:relative;height:200px;background-size:cover;background-position:center;border-radius:5px}
+.page-template-page-home #homeNews .homeNewsPostContainer .homeNewsThumbContainer .homeNewsThumbLink{position:absolute;top:0;right:0;bottom:0;left:0;z-index:2}
+.page-template-page-home #homeNews .homeNewsPostContainer .homeNewsThumbContainer .homeNewsThumbDate{position:absolute;bottom:0;left:0;right:0;background:#fdb827;color:#fff;text-align:center;font-size:.75em;padding:5px}
+.page-template-page-home #homeNews .homeNewsPostContainer h3 a{color:#0a2b4e}
+.page-template-page-home #homeNews .homeNewsPostContainer h3 a:hover{text-decoration:none}
+.page-template-page-home #homeNews #homeTestimonials .homeTestimonialsContainer{background:#fff;border-radius:5px;border:1px solid #ddd;padding:2rem;min-height:400px}
+.page-template-page-home #homeNews #homeTestimonials .homeTestimonialsContainer .homeTestiSlider{width:100%}
+.page-template-page-home #homeNews #homeTestimonials .homeTestimonialsContainer .homeTestimonialsContainerInner .homeTestimonialsImgWrap{width:100px;height:100px;border-radius:50%;border:2px solid #fdb827;display:inline-block;margin:auto auto 2rem auto}
+.page-template-page-home #homeNews #homeTestimonials .homeTestimonialsContainer .homeTestimonialsContainerInner img{border:2px solid #fff;border-radius:50%;overflow:hidden}
+.page-template-page-home #homeNews #homeTestimonials .homeTestimonialsContainer .homeTestimonialsContainerInner .homeTestAuthorTitle{color:#fdb827}
+.page-template-page-home #homeCTA{background-color:#0a2b4e;background-size:cover;background-position:center;color:#fff}
+.page-template-page-home #homeSponsors h2 span{color:#fdb827}
+.page-template-page-home #homeSponsors .homeSponsorsContainer{width:850px;max-width:100%;margin-left:auto;margin-right:auto}
+.page-template-page-home #homeSponsors .homeSponsorsContainer img{margin-bottom:2rem}
+.page-template-page-home #homeSponsors .homeSponsorsContainer h4{margin-top:2rem}
