@@ -23,7 +23,6 @@ get_header();
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<!-- ADD OVERLAY HERE TESTING-->
 
     <div class="ms-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
@@ -53,25 +52,6 @@ get_header();
 				</p>
     <div class="clearfix"></div>
 
-				<div class="overlay">
-					<div class="overlay-text">
-									<span class="overlay-title">
-										<h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"> <?php the_title(); ?></a></h6>
-									</span>
-									<P>
-										<?php the_author(); ?>  |	<span class="overlay-link"> <?php the_category( ', ' ); ?> </span>
-									</P>
-									<hr>
-							<?php the_excerpt(); ?>
-
-									<div class="clearfix"></div>
-							<hr>
-							<p>
-							<span class="overlay-link"> <?php comments_number( $zero, $one, $more ); ?>  |	<?php the_date(); ?> </span>
-							</p>
-					<div class="clearfix"></div>
-				</div><!-- end text -->
-				</div><!-- end overlay -->
     </div>
 
     <?php endwhile; ?>
