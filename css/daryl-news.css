@@ -68,9 +68,6 @@ div.ms-item
 
 }
 
-a .read-more-button {
-    color: #0A2B4E;
-}
 
 .blog hr {
   border-color:#fdc95a;
@@ -86,8 +83,11 @@ a .read-more-button {
   border: 2px solid #0A2B4E;
   padding: 10px;
   border-radius: 25px;
+  color: #0A2B4E;
 }
-
+a .read-more-button {
+    color: #0A2B4E;
+}
 .pagination-buttons {
 
   text-decoration: none;
