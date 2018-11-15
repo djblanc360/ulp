@@ -89,13 +89,23 @@ div.ms-item
   grid-row-gap: 1em;
 }
 
-h2 {
+
+
+.blog h2 {
   margin-top: 2rem;
   padding-top: 2rem:
   text-transform: uppercase;
   color: #0A2B4E ;
   text-align: center;
 
+}
+
+a .read-more-button {
+    color: #0A2B4E;
+}
+
+.blog hr {
+  border-color:#fdc95a;
 }
 
 .container {
@@ -108,13 +118,6 @@ h2 {
   border: 2px solid #0A2B4E;
   padding: 10px;
   border-radius: 25px;
-}
-a .read-more-button {
-    color: #0A2B4E;
-}
-
-hr {
-  border-color:#fdc95a;
 }
 
 .pagination-buttons {
