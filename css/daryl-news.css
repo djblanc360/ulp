@@ -27,7 +27,7 @@ div.ms-item
   color: white;
 }
 
-.ms-tem:hover .read-more-button {
+.ms-item:hover .read-more-button {
   border: 2px solid white;
 }
 
