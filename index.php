@@ -43,7 +43,7 @@ get_header();
 							<?php the_author(); ?>  |	<?php the_category( ', ' ); ?>
 						</P>
 						<hr>
-        <?php the_excerpt(); ?>
+        <div class="post-title"> <?php the_excerpt(); ?> </div>
 				<a href="<?php the_permalink(); ?>" class="btn btn-green btn-block read-more-button">Read More</a>
 				    <div class="clearfix"></div>
 				<hr>
