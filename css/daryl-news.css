@@ -27,6 +27,9 @@ div.ms-item
   color: white;
 }
 
+.ms-tem:hover .read-more-button {
+  border: 2px solid white;
+}
 
 /* LINK STYLING */
 .ms-item a {
@@ -52,6 +55,16 @@ div.ms-item
 }
 .post-text {
   color: #0A2B4E;
+}
+
+.read-more-button {
+  border: 2px solid #0A2B4E;
+  padding: 10px;
+  border-radius: 25px;
+  color: #0A2B4E;
+}
+a .read-more-button {
+    color: #0A2B4E;
 }
 /* END STYLING */
 
@@ -82,15 +95,7 @@ div.ms-item
   grid-row-gap: 1em;
 }
 
-.read-more-button {
-  border: 2px solid #0A2B4E;
-  padding: 10px;
-  border-radius: 25px;
-  color: #0A2B4E;
-}
-a .read-more-button {
-    color: #0A2B4E;
-}
+
 .pagination-buttons {
 
   text-decoration: none;
