@@ -23,6 +23,9 @@ div.ms-item
   color:#FDB827;
 }
 
+.ms-item:hover a {
+  color: white;
+}
 
 
 /* LINK STYLING */
