@@ -28,21 +28,18 @@ div.ms-item
 
 
 /* LINK STYLING */
-.ms-item a
-{
-    color: white;
-}
+
 .ms-item a:visited
 {
-    color: white;
+
 }
 
 .ms-item a:hover {
-  text-decoration: none;
+
 }
 
 .ms-item a:active {
-    color: white;
+
 }
 
 .post-title {
