@@ -26,15 +26,33 @@ get_header();
 
     <div class="ms-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-        <?php if (has_post_thumbnail()) : ?>
+    <?php  $image = get_children( array(
 
-            <figure class="article-preview-image">
+          'post_parent' => $post->ID,
+          'post_type' => 'attachment',
+          'post_mime_type' => 'image'
+      ));
 
-                <?php the_post_thumbnail('large'); ?>
+      $video = get_children( array(
 
-            </figure>
+          'post_parent' => $post->ID,
+          'post_type' => 'attachment',
+          'post_mime_type' => 'video'
 
-        <?php else : ?>
+      ));
+
+      // if the video isn't empty display video
+
+      if ( ! empty($video) ) {
+
+          foreach ( $video as $attachment_id => $attachment ) {
+              echo '<video controls autoplay loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
+      }
+
+      } else {
+          echo the_post_thumbnail();
+      }
+      ?>
 
         <?php endif; ?>
 
