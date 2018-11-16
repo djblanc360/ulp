@@ -19,16 +19,7 @@ get_header();
 <div class="container">
 <div class="row" id="ms-container">
 
-<?php
-    $video = get_children( array(
 
-        'post_parent' => $post->ID,
-        'post_type' => 'attachment',
-        'post_mime_type' => 'video'
-
-    ));
-
-?>
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -49,6 +40,14 @@ get_header();
 
       <?php if ( has_post_format( 'video' )) : ?>
           <?php
+              $video = get_children( array(
+
+                  'post_parent' => $post->ID,
+                  'post_type' => 'attachment',
+                  'post_mime_type' => 'video'
+
+              ));
+
               foreach ( $video as $attachment_id => $attachment ) {
                   echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
            ?>
