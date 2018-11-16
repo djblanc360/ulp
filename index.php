@@ -49,6 +49,14 @@ get_header();
 
         ));
 
+        $gallery= get_children( array(
+
+            'post_parent' => $post->ID,
+            'post_type' => 'attachment',
+            'post_mime_type' => 'gallery'
+
+        ));
+
         if ( has_post_format( 'video' ) ) {
 
             foreach ( $video as $attachment_id => $attachment ) {
@@ -58,8 +66,8 @@ get_header();
         }
         else if ( has_post_format( 'gallery' ) ) {
 
-            foreach ( $video as $attachment_id => $attachment ) {
-                echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
+            foreach ( $gallery as $attachment_id => $attachment ) {
+                echo get_post_gallery_images( $post );;
         }
 
         }
