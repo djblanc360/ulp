@@ -41,7 +41,13 @@ get_header();
 
         ));
 
-        // if the video isn't empty display video
+        $audio= get_children( array(
+
+            'post_parent' => $post->ID,
+            'post_type' => 'attachment',
+            'post_mime_type' => 'audio'
+
+        ));
 
         if ( has_post_format( 'video' ) ) {
 
@@ -49,6 +55,21 @@ get_header();
                 echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
         }
 
+        }
+        else if ( has_post_format( 'gallery' ) ) {
+
+            foreach ( $video as $attachment_id => $attachment ) {
+                echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
+        }
+
+        }
+        else if ( has_post_format( 'audio' ) ) {
+
+            foreach ( $audio as $attachment_id => $attachment ) {
+                echo '<audio style="" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></audio>';
+        }
+
+        }
         else {
             echo the_post_thumbnail();
         }
