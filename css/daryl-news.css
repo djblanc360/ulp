@@ -129,6 +129,6 @@ a .read-more-button {
   margin-top: 2rem;
 }
 
-.news-video-thumbnail {
+video.news-video-thumbnail {
   width:300px;
 }
