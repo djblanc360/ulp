@@ -46,7 +46,7 @@ get_header();
       if ( ! empty($video) ) {
 
           foreach ( $video as $attachment_id => $attachment ) {
-              echo '<video class="news-video-thumbnail" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
+              echo '<video style="width:300px;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
       }
 
       } else {
