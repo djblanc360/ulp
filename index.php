@@ -85,7 +85,12 @@ get_header();
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
 						<P>
-							<?php the_author(); ?>  |	<span class="post-link"> <?php get_the_category( ', ' ); ?> </span>
+							<?php the_author(); ?>  |	<span class="post-link">
+                <?php
+                  foreach (get_categories() as $category){
+                  echo $category->name;
+                  } ?>
+               </span>
 						</P>
 						<hr>
         <div class="post-text"> <?php the_excerpt(); ?> </div>
