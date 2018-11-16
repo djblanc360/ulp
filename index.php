@@ -26,37 +26,33 @@ get_header();
 
     <div class="ms-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-      <?php if (has_post_thumbnail()) : ?>
+      <?php  $image = get_children( array(
 
-          <figure class="article-preview-image">
+            'post_parent' => $post->ID,
+            'post_type' => 'attachment',
+            'post_mime_type' => 'image'
+        ));
 
-              <?php the_post_thumbnail('large'); ?>
+        $video = get_children( array(
 
-          </figure>
+            'post_parent' => $post->ID,
+            'post_type' => 'attachment',
+            'post_mime_type' => 'video'
 
-      <?php else : ?>
+        ));
 
-      <?php endif; ?>
+        // if the video isn't empty display video
 
-      <!-- If a post thhumbnail should be a video-->
-      <?php if ( has_post_format( 'video' )) : ?>
-          <?php
-              $video = get_children( array(
+        if ( has_post_format( 'video' ) ) {
 
-                  'post_parent' => $post->ID,
-                  'post_type' => 'attachment',
-                  'post_mime_type' => 'video'
+            foreach ( $video as $attachment_id => $attachment ) {
+                echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
+        }
 
-              ));
-
-              foreach ( $video as $attachment_id => $attachment ) {
-                  echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
-           ?>
-
-      <?php else : ?>
-
-      <?php endif; ?>
-
+        } else {
+            echo the_post_thumbnail();
+        }
+        ?>
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
 						<P>
