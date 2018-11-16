@@ -35,6 +35,10 @@ div.ms-item
   color: white;
 }
 
+.ms-item:hover .post-link {
+  color: #FDB827;
+}
+
 /* LINK STYLING */
 .ms-item a {
   color: #0A2B4E;
@@ -59,6 +63,9 @@ div.ms-item
 }
 .post-text {
   color: #0A2B4E;
+}
+.post-link {
+  color: #A3A3A3;
 }
 
 .read-more-button {

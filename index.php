@@ -77,7 +77,7 @@ get_header();
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
 						<P>
-							<?php the_author(); ?>  |	<?php the_category( ', ' ); ?>
+							<?php the_author(); ?>  |	<span class="post-link"><?php the_category( ', ' ); ?></span>
 						</P>
 						<hr>
         <div class="post-text"> <?php the_excerpt(); ?> </div>
