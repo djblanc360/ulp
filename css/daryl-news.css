@@ -128,3 +128,7 @@ a .read-more-button {
   margin-left: 50%;
   margin-top: 2rem;
 }
+
+.news-video-thumbnail {
+  width:300px;
+}
