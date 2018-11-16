@@ -67,7 +67,7 @@ get_header();
         else if ( has_post_format( 'gallery' ) ) {
 
           foreach ( $gallery as $attachment_id => $attachment ) {
-              echo '<gallery style="" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></gallery>';
+              echo '<image style="" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></image>';
         }
 
         }
