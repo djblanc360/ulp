@@ -40,9 +40,8 @@ get_header();
 
       <?php if ( has_post_format( 'video' )) : ?>
                          <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail( 'video-thumb', array( 'class' => 'img-video' )); ?><span class="playbutton"></span></a>
-                         <?php else : ?>
-                         <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail( 'video-thumb', array( 'class' => 'img-video' )); ?></a>
-    <?php endif; ?>
+
+      <?php endif; ?>
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
 						<P>
