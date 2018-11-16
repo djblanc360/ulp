@@ -79,6 +79,13 @@ if ( ! function_exists( 'ulp_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		/**
+		 * Add post format support for core custom logo.
+		 *
+		 * @link https://codex.wordpress.org/Post_Formats
+		 */
+		add_theme_support( 'post-formats', array( 'video', 'gallery', 'audio' ) );
 	}
 endif;
 add_action( 'after_setup_theme', 'ulp_setup' );
