@@ -49,7 +49,7 @@ get_header();
                 echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
         }
 
-        } else {
+        else {
             echo the_post_thumbnail();
         }
         ?>
