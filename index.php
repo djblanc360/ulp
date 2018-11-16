@@ -38,6 +38,7 @@ get_header();
 
       <?php endif; ?>
 
+      <!-- If a post thhumbnail should be a video-->
       <?php if ( has_post_format( 'video' )) : ?>
           <?php
               $video = get_children( array(
@@ -51,6 +52,11 @@ get_header();
               foreach ( $video as $attachment_id => $attachment ) {
                   echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
            ?>
+
+      <?php else : ?>
+
+      <?php endif; ?>
+
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
 						<P>
