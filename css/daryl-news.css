@@ -37,7 +37,7 @@ div.ms-item
 }
 
 .ms-item .post-title a{
-  color: #0A2B4E;;
+  color: #0A2B4E;
 }
 .ms-item a {
   color: #A3A3A3;
@@ -68,12 +68,14 @@ div.ms-item
   color: #0A2B4E;
 }
 .post-link {
-  color: #A3A3A3;
+  color: #A3A3A3 !important;
 }
 
 .post-title-link a {
   color: ##0A2B4E;
 }
+
+
 
 .read-more-button {
   border: 2px solid #0A2B4E;
