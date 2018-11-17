@@ -122,4 +122,5 @@ get_header();
 	<span class="nav-previous pagination-buttons"><?php previous_posts_link( '<i class="fas fa-angle-left"></i>' ); ?></span>
 	<span class="nav-next pagination-buttons"><?php next_posts_link( '<i class="fas fa-angle-right"></i>' ); ?></span>
 </div>
+<div class="news-space"></div>
 <?php get_footer(); ?>
