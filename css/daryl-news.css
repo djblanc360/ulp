@@ -84,7 +84,7 @@ div.ms-item
   color: #0A2B4E;
   display: inline-block;
 }
-a .read-more-button {
+a.read-more-button {
     color: #0A2B4E;
 }
 /* END STYLING */
