@@ -87,6 +87,10 @@ div.ms-item
 a.read-more-button {
     color: #0A2B4E;
 }
+
+.ms-item:hover a.read-more-button {
+  color: white;
+}
 /* END STYLING */
 
 #ms-container {
