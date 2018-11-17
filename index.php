@@ -120,6 +120,6 @@ get_header();
 			<a href="<?php echo site_url(); ?>/news/"><i class="fas fa-home"></i></a>
 	</span>
 	<span class="nav-previous pagination-buttons"><?php previous_posts_link( '<' ); ?></span>
-	<span class="nav-next pagination-buttons"><?php next_posts_link( '' ); ?><i class="fas fa-angle-right"></i></span>
+	<span class="nav-next pagination-buttons"><?php next_posts_link( '<i class="fas fa-angle-right"></i>' ); ?></span>
 </div>
 <?php get_footer(); ?>
