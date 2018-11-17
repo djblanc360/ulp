@@ -83,6 +83,8 @@ div.ms-item
   border-radius: 25px;
   color: #0A2B4E;
   display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 a.read-more-button {
     color: #0A2B4E;

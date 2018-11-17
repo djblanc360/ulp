@@ -89,7 +89,7 @@ get_header();
 						</P>
 
         <div class="post-text"> <?php the_excerpt(); ?> </div>
-				<a href="<?php the_permalink(); ?>" class="btn btn-green btn-block read-more-button">Read More</a>
+				<a href="<?php the_permalink(); ?>" class="btn btn-green read-more-button">Read More</a>
 				    <div class="clearfix"></div>
 
 				<p>
