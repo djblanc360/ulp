@@ -87,11 +87,11 @@ get_header();
 						<P>
 							<?php the_author(); ?>  |	<span class="post-link"> <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?> </span>
 						</P>
-						<hr>
+
         <div class="post-text"> <?php the_excerpt(); ?> </div>
 				<a href="<?php the_permalink(); ?>" class="btn btn-green btn-block read-more-button">Read More</a>
 				    <div class="clearfix"></div>
-				<hr>
+
 				<p>
 				<?php comments_number( $zero, $one, $more ); ?>comments  |	<?php the_date(); ?>
 				</p>
@@ -113,6 +113,7 @@ get_header();
 <div class="clearfix"></div>
 
 </div><!--end container -->
+<hr>
 <!--paginationn functions here -->
 <div class="news-navigation">
 	<span class="pagination-buttons">
