@@ -7,11 +7,3 @@ jQuery(window).load(function() {
   });
 
 });
-
-// This is how you setup a callback function to work with your new endpoint
-function example__like( WP_REST_Request $request ) {
-
-        $likes = 20;
-
-        return $likes;
-    }
