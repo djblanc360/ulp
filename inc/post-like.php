@@ -1,5 +1,17 @@
 <?php
 /**
+ * Code for post likes
+*/
+add_action( 'wp_enqueue_scripts', 'sl_enqueue_scripts' );
+function sl_enqueue_scripts() {
+	wp_enqueue_script( 'simple-likes-public-js', get_template_directory_uri() . '/js/simple-likes-public.js', array( 'jquery' ), '0.5', false );
+	wp_localize_script( 'simple-likes-public-js', 'simpleLikes', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'like' => __( 'Like', 'YourThemeTextDomain' ),
+		'unlike' => __( 'Unlike', 'YourThemeTextDomain' )
+	) );
+}
+/**
  * Processes like/unlike
  * @since    0.5
  */
