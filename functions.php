@@ -489,7 +489,7 @@ function sl_get_ip() {
  */
 function get_liked_icon() {
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart"></i> */
-	$icon = '<span class="sl-icon"><i class="fa fa-heart"></i></span>';
+	$icon = '<span class="sl-icon"><i class="fas fa-heart"></i></span>';
 	return $icon;
 } // get_liked_icon()
 /**
@@ -497,7 +497,7 @@ function get_liked_icon() {
  */
 function get_unliked_icon() {
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart-o"></i> */
-	$icon = '<span class="sl-icon"><i class="fa fa-heart-o"></i></span>';
+	$icon = '<span class="sl-icon"><i class="far fa-heart"></i></span>';
 	return $icon;
 } // get_unliked_icon()
 /**
