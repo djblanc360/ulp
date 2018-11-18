@@ -93,7 +93,7 @@ get_header();
 				    <div class="clearfix"></div>
 
 				<p>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php  ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php get_like_count( $like_count ); ?>
 				</p>
     <div class="clearfix"></div>
 
