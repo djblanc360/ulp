@@ -487,19 +487,19 @@ function sl_get_ip() {
  * Utility returns the button icon for "like" action
  * @since    0.5
  */
-function get_liked_icon() {
-	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart"></i> */
-	$icon = '<span class="sl-icon"><i class="fa fa-heart"></i></span>';
-	return $icon;
-} // get_liked_icon()
-/**
- * Utility returns the button icon for "unlike" action
- */
-function get_unliked_icon() {
-	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart-o"></i> */
-	$icon = '<span class="sl-icon"><i class="fa fa-heart-o"></i></span>';
-	return $icon;
-} // get_unliked_icon()
+ function get_liked_icon() {
+ 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart"></i> */
+ 	$icon = '<span class="sl-icon"><i class="fas fa-heart"></i></span>';
+ 	return $icon;
+ } // get_liked_icon()
+ /**
+  * Utility returns the button icon for "unlike" action
+  */
+ function get_unliked_icon() {
+ 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart-o"></i> */
+ 	$icon = '<span class="sl-icon"><i class="far fa-heart"></i></span>';
+ 	return $icon;
+ } // get_unliked_icon()
 /**
  * Utility function to format the button count,
  * appending "K" if one thousand or greater,
