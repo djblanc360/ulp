@@ -33,10 +33,7 @@ get_header();
 						?>
 					</div>
 					<div class="col-sm-3">
-						<button class="like__btn animated">
-					    <i class="like__icon fa fa-heart"></i>
-					    <span class="like__number">99</span>
-					  </button>				
+						<?php echo get_simple_likes_button( get_comment_ID(), 1 ); ?>
 						<?php get_sidebar(); ?>
 					</div>
 				</div>
