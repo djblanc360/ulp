@@ -33,7 +33,9 @@ get_header();
 						?>
 					</div>
 					<div class="col-sm-3">
-						<?php the_field('likes_number'); ?>
+						<button class="like__btn">
+						    <span class="like__number"><?php the_field('likes_number'); ?></span>
+						</button>						
 						<?php get_sidebar(); ?>
 					</div>
 				</div>
