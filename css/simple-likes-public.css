@@ -4,7 +4,7 @@
 	text-decoration: none !important;
 }
 .sl-button {
-	padding: 0.375em 0.625em;
+	/*padding: 0.375em 0.625em;*/
 	font-size: 1em;
 	line-height: 1;
 	font-weight: normal;
@@ -32,8 +32,8 @@ a.liked span.sl-count,
 }
 .sl-icon svg {
 	fill: currentColor;
-	width: 1em;
-	height: 1em;
+	width: 0.1em;
+	height: 0.1em;
 }
 .sl-icon svg:after {
 	content: "";
