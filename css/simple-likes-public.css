@@ -29,11 +29,12 @@ a.liked span.sl-count,
 	margin-right: 0.3125em;
 	font-family: 'Arial Unicode MS', Arial, sans-serif;
 	vertical-align: middle;
+  width: 1rem;
 }
 .sl-icon svg {
 	fill: currentColor;
-	width: 0.1em;
-	height: 0.1em;
+	width: 1em;
+	height: 1em;
 }
 .sl-icon svg:after {
 	content: "";
