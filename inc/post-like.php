@@ -1,9 +1,4 @@
 <?php
-
-
-
-add_action( 'wp_ajax_nopriv_process_simple_like', 'process_simple_like' );
-add_action( 'wp_ajax_process_simple_like', 'process_simple_like' );
 function process_simple_like() {
 	// Security
 	$nonce = isset( $_REQUEST['nonce'] ) ? sanitize_text_field( $_REQUEST['nonce'] ) : 0;
