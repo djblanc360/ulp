@@ -34,13 +34,17 @@ get_header();
 
         if( $audio ) {
 
-            echo $value;
+            echo $audio;
 
         }
         else if ($video) {
 
+            echo $video;
+
         }
         else if ($slider) {
+
+            echo $slider;
 
         }
         else {
