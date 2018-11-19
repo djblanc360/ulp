@@ -159,3 +159,29 @@ video.news-video-thumbnail {
 .news-space {
   margin: 4%;
 }
+
+
+/* Slider Styling */
+.news-slide {display: none}
+
+/* Slideshow container */
+.news-slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.new-slider-prev, .new-slider-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}

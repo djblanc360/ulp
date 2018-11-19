@@ -48,30 +48,24 @@ get_header();
         }
         ?>
 
-        <?php
-              $images = get_field('slider_thumbnail');
+        <?php $images = get_field('slider_thumbnail');
 
-              if( $images ): ?>
-                  <div id="slider" class="flexslider">
-                      <ul class="slides">
-                          <?php foreach( $images as $image ): ?>
-                              <li>
-                                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                                  <p><?php echo $image['caption']; ?></p>
-                              </li>
-                          <?php endforeach; ?>
-                      </ul>
-                  </div>
-                  <div id="carousel" class="flexslider">
-                      <ul class="slides">
-                          <?php foreach( $images as $image ): ?>
-                              <li>
-                                  <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                              </li>
-                          <?php endforeach; ?>
-                      </ul>
-                  </div>
-              <?php endif; ?>
+        if( $images ): ?>
+              <div class="news-slideshow-container">
+
+              <div class="news-slide fade">
+                <?php foreach( $images as $image ): ?>
+                <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <div class="news-slider-text"><?php echo $image['caption']; ?></div>
+                <?php endforeach; ?>
+              </div>
+
+              <a class="new-slider-prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="news-slider-next" onclick="plusSlides(1)">&#10095;</a>
+
+              </div>
+
+        <?php endif; ?>
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
 						<P>
