@@ -52,16 +52,14 @@ get_header();
 
         if( $images ): ?>
 
-            <div class="flexslider">
-                <ul class="slides">
+                <ul class="news-slider">
                     <?php foreach( $images as $image ): ?>
-                        <li>
+                        <li class="news-slide">
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                             <p><?php echo $image['caption']; ?></p>
                         </li>
                     <?php endforeach; ?>
                 </ul>
-            </div>
 
         <?php endif; ?>
 
