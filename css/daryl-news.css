@@ -161,18 +161,17 @@ video.news-video-thumbnail {
 }
 
 
-/* Slider Styling */
+/* SLIDER STYLING */
 .news-slide {display: none}
 
 /* Slideshow container */
 .news-slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 /* Next & previous buttons */
-.new-slider-prev, .new-slider-next {
+.news-slider-prev, .news-slider-next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -184,4 +183,26 @@ video.news-video-thumbnail {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.news-slider-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.news-slider-prev:hover, .news-slider-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.news-slider-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }

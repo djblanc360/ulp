@@ -53,13 +53,13 @@ get_header();
         if( $images ): ?>
               <div class="news-slideshow-container">
 
+              <?php foreach( $images as $image ): ?>
               <div class="news-slide fade">
-                <?php foreach( $images as $image ): ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <img class="news-slider-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                 <div class="news-slider-text"><?php echo $image['caption']; ?></div>
-                <?php endforeach; ?>
               </div>
-
+              <?php endforeach; ?>
+              
               <a class="new-slider-prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="news-slider-next" onclick="plusSlides(1)">&#10095;</a>
 
