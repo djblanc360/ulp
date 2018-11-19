@@ -40,10 +40,10 @@ jQuery(window).load(function() {
       lastElem = triggers.length-1;
       target === 0 ? target = lastElem : target = target-1;
       sliderResponse(target);
-      resetTiming();
+    //  resetTiming();
   });
 
-
+/*
   function sliderTiming() {
       target = $('ul.triggers li.active').index();
       target === lastElem ? target = 0 : target = target+1;
@@ -51,11 +51,11 @@ jQuery(window).load(function() {
   }
 
 
-  var timingRun = setInterval(function() { sliderTiming(); };
+  var timingRun = setInterval(function() { sliderTiming(); },5000);
   function resetTiming() {
       clearInterval(timingRun);
-      timingRun = setInterval(function() { sliderTiming(); };
+      timingRun = setInterval(function() { sliderTiming(); },5000);
   }
-
+*/
 
 });
