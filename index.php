@@ -26,57 +26,21 @@ get_header();
 
     <div class="ms-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-      <?php  $image = get_children( array(
+      <?php
 
-            'post_parent' => $post->ID,
-            'post_type' => 'attachment',
-            'post_mime_type' => 'image'
-        ));
+        $audio = get_field( "audio_thumbnail" );
+        $video = get_field( "video_thumbnail" );
+        $slider = get_field( "slider_thumbnail" );
 
-        $video = get_children( array(
+        if( $audio ) {
 
-            'post_parent' => $post->ID,
-            'post_type' => 'attachment',
-            'post_mime_type' => 'video'
-
-        ));
-
-        $audio= get_children( array(
-
-            'post_parent' => $post->ID,
-            'post_type' => 'attachment',
-            'post_mime_type' => 'audio'
-
-        ));
-
-        $gallery= get_children( array(
-
-            'post_parent' => $post->ID,
-            'post_type' => 'attachment',
-            'post_mime_type' => 'gallery'
-
-        ));
-
-        if ( has_post_format( 'video' ) ) {
-
-            foreach ( $video as $attachment_id => $attachment ) {
-                echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
-        }
+            echo $value;
 
         }
-        else if ( has_post_format( 'gallery' ) ) {
-
-           echo wp_get_attachment_image( get_the_ID(), array('700', '600'), "", array( "class" => "img-responsive" ) );
-
-
-        
+        else if ($video) {
 
         }
-        else if ( has_post_format( 'audio' ) ) {
-
-            foreach ( $audio as $attachment_id => $attachment ) {
-                echo '<audio style="" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></audio>';
-        }
+        else if ($slider) {
 
         }
         else {
