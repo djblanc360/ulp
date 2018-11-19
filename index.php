@@ -55,7 +55,7 @@ get_header();
 
               <div class="news-slide fade">
                 <?php foreach( $images as $image ): ?>
-                <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                 <div class="news-slider-text"><?php echo $image['caption']; ?></div>
                 <?php endforeach; ?>
               </div>
