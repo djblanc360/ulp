@@ -54,12 +54,14 @@ get_header();
               <div class="news-slideshow-container">
 
               <?php foreach( $images as $image ): ?>
-              <div class="news-slide fade">
-                <img class="news-slider-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                <div class="news-slider-text"><?php echo $image['caption']; ?></div>
-              </div>
+              <?php  echo
+              '<div class="news-slide fade">
+                <img class="news-slider-image" src="' . $image['url'] . '" alt="' . $image['alt'] . '" />
+                <div class="news-slider-text">' . $image['caption'] .' ?></div>
+              </div>'
+              ?>
               <?php endforeach; ?>
-              
+
               <a class="new-slider-prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="news-slider-next" onclick="plusSlides(1)">&#10095;</a>
 
