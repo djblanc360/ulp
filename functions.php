@@ -224,4 +224,4 @@ require_once( get_template_directory(). '/inc/post-like.php');
 /**
  * Code forslider
 */
-require_once( get_template_directory(). '/inc/post-slider.php');
+//require_once( get_template_directory(). '/inc/post-slider.php');
