@@ -55,8 +55,8 @@ get_header();
                 <ul class="news-slider">
                     <?php foreach( $images as $image ): ?>
                         <li class="news-slide">
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                            <p><?php echo $image['caption']; ?></p>
+                            <img class="news-slide-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <p class="news-slide-caption"><?php echo $image['caption']; ?></p>
                         </li>
                     <?php endforeach; ?>
                 </ul>
