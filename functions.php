@@ -220,3 +220,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Code for post likes
 */
 require_once( get_template_directory(). '/inc/post-like.php');
+
+/**
+ * Code forslider
+*/
+require_once( get_template_directory(). '/inc/post-slider.php');

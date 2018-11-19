@@ -66,8 +66,9 @@ get_header();
         }
         else if ( has_post_format( 'gallery' ) ) {
 
-          foreach ( $gallery as $attachment_id => $attachment ) {
-              echo '<image style="" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></image>';
+           echo wp_get_attachment_image( get_the_ID(), string|array $size = 'thumbnail', "", array( "class" => "img-responsive" ) );  
+
+
         }
 
         }
