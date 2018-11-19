@@ -40,7 +40,7 @@ get_header();
         else if ($video) {
 
 
-              echo '<video style="width:300px;margin:auto;" controls loop src="'$video'"></video>';
+              echo '<video style="width:300px;margin:auto;" controls loop src="' . $video . '"></video>';
 
 
         }
