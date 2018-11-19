@@ -39,9 +39,9 @@ get_header();
         }
         else if ($video) {
 
-          foreach ( $video as $attachment_id => $attachment ) {
-              echo '<video style="width:300px;margin:auto;" controls loop src="' . wp_get_attachment_url( $attachment_id ) . '"></video>';
-      }
+
+              echo '<video style="width:300px;margin:auto;" controls loop src="'$video'"></video>';
+
 
         }
         else if ($slider) {
