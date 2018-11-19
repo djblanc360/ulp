@@ -162,60 +162,13 @@ video.news-video-thumbnail {
 
 
 /* SLIDER STYLING */
-.news-slide {display: none}
 
-/* Slideshow container */
-.news-slideshow-container {
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.news-slider-prev, .news-slider-next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.news-slider-next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.news-slider-prev:hover, .news-slider-next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.news-slider-text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 
 ul.news-slider { position:relative; top:0px;left:0px; }
   ul.news-slider li { position:absolute; top:0px;left:0px; }
 
-ul.triggers { position:absolute; top:310px; left:80px; }
-    ul.triggers li {
-        float:left; margin:0 5px; font: bold 16px arial; cursor:pointer;
-        background-color:#ccc; color:#000; padding:10px;
-    }ul.triggers li.active {background-color:red; color:#000;}
+ul.triggers { display:none;}
 
 
 .control {position:absolute; top: 380px; color:#fff; cursor:pointer;}
