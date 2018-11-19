@@ -43,7 +43,7 @@ jQuery(window).load(function() {
       resetTiming();
   });
 
-/*
+
   function sliderTiming() {
       target = $('ul.triggers li.active').index();
       target === lastElem ? target = 0 : target = target+1;
@@ -51,11 +51,11 @@ jQuery(window).load(function() {
   }
 
 
-  var timingRun = setInterval(function() { sliderTiming(); },5000);
+  var timingRun = setInterval(function() { sliderTiming(); };
   function resetTiming() {
       clearInterval(timingRun);
-      timingRun = setInterval(function() { sliderTiming(); },5000);
+      timingRun = setInterval(function() { sliderTiming(); };
   }
-*/
+
 
 });

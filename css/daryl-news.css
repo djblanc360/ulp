@@ -177,9 +177,10 @@ ul.news-slider {
     left:0px;
   }
 
-ul.triggers { display: none; list-style-type: none;}
-ul.triggers li { display: none; }
-ul.triggers li.active { display: none; }
+ul.triggers {
+  display: none;
+}
+
 
 
 .control {position:absolute; top: 380px; color:#fff; cursor:pointer;}
