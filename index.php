@@ -66,10 +66,10 @@ get_header();
         }
         else if ( has_post_format( 'gallery' ) ) {
 
-           echo wp_get_attachment_image( get_the_ID(), array('700', '600'), "", array( "class" => "img-responsive" ) ); 
+           echo wp_get_attachment_image( get_the_ID(), array('700', '600'), "", array( "class" => "img-responsive" ) );
 
 
-        }
+        
 
         }
         else if ( has_post_format( 'audio' ) ) {
