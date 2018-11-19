@@ -162,3 +162,24 @@ video.news-video-thumbnail {
 
 
 /* SLIDER STYLING */
+ul.news-slider {
+  position:relative;
+  top:0px;
+  left:0px;
+  list-style-type: none;
+}
+  ul.news-slider li {
+    position:absolute;
+    top:0px;
+    left:0px;
+  }
+
+ul.triggers {
+  display: none;
+}
+
+
+
+.control {position:absolute; top: 380px; color:#fff; cursor:pointer;}
+.prev { left:120px; }
+.next { left:180px; }
