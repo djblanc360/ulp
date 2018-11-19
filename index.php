@@ -52,7 +52,7 @@ get_header();
 
         if( $images ): ?>
 
-
+              <div class="mask">
                 <ul class="news-slider">
                     <?php foreach( $images as $image ): ?>
                         <li>
@@ -61,7 +61,7 @@ get_header();
                         </li>
                     <?php endforeach; ?>
                 </ul>
-
+             </div>
                 <ul class="triggers">
                    <li>0</li>
                    <li>1</li>

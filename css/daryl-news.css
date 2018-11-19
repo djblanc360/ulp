@@ -162,6 +162,7 @@ video.news-video-thumbnail {
 
 
 /* SLIDER STYLING */
+.mask { float:left; margin:40px; width:400px; height:266px; overflow:hidden;  }
 ul.news-slider { position:relative; top:0px;left:0px; list-style: none;}
   ul.news-slider li { position:absolute; top:0px;left:0px; }
 
