@@ -52,15 +52,24 @@ get_header();
 
         if( $images ): ?>
 
+            
                 <ul class="news-slider">
                     <?php foreach( $images as $image ): ?>
-                        <li class="news-slide">
+                        <li>
                             <img class="news-slide-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                             <p class="news-slide-caption"><?php echo $image['caption']; ?></p>
                         </li>
                     <?php endforeach; ?>
                 </ul>
-
+                <ul class="triggers">
+                   <li>0</li>
+                   <li>1</li>
+                   <li>2</li>
+                   <li>3</li>
+                   <li>4</li>
+                </ul>
+                <span class="control prev">Prev</span>
+                <span class="control next">Next</span>
         <?php endif; ?>
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
