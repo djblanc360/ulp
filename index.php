@@ -53,14 +53,17 @@ get_header();
         if( $images ): ?>
 
               <div id="slider" class="flexslider">
-                  <ul class="slides">
+                  <ul class="slideshow-container">
                       <?php foreach( $images as $image ): ?>
-                          <li>
+                          <li class="mySlides fade">
                               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                               <p><?php echo $image['caption']; ?></p>
                           </li>
                       <?php endforeach; ?>
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>                      
                   </ul>
+
               </div>
 
         <?php endif; ?>
