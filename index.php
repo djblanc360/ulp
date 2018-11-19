@@ -52,18 +52,16 @@ get_header();
 
         if( $images ): ?>
 
-              <div id="slider" class="flexslider">
-                  <div class="slideshow-container">
-                      <?php foreach( $images as $image ): ?>
-                          <div class="mySlides fade">
-                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                              <div class="text"><?php echo $image['caption']; ?></div>
-                          </div>
-                      <?php endforeach; ?>
-
-                  </div>
-
-              </div>
+            <div class="flexslider">
+                <ul class="slides">
+                    <?php foreach( $images as $image ): ?>
+                        <li>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <p><?php echo $image['caption']; ?></p>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
 
         <?php endif; ?>
 
