@@ -162,7 +162,7 @@ video.news-video-thumbnail {
 
 
 /* SLIDER STYLING */
-ul.news-slider { position:relative; top:0px;left:0px; }
+ul.news-slider { position:relative; top:0px;left:0px; list-style: none;}
   ul.news-slider li { position:absolute; top:0px;left:0px; }
 
 ul.triggers { position:absolute; top:310px; left:80px; }
