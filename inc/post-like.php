@@ -309,7 +309,7 @@ function sl_format_count( $number ) {
  */
 function get_like_count( $like_count ) {
 	$like_text = __( 'Like', 'YourThemeTextDomain' );
-	if ( is_numeric( $like_count ) && $like_count > 0 ) {
+	if ( is_numeric( $like_count )) {
 		$number = sl_format_count( $like_count );
 	} else {
 		$number = $like_text;
