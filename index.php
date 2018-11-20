@@ -84,7 +84,7 @@ get_header();
 				    <div class="clearfix"></div>
 
 				<p>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php $count ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo $count ?>
 				</p>
     <div class="clearfix"></div>
 
