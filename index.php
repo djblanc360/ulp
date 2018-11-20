@@ -51,14 +51,15 @@ get_header();
         <?php $images = get_field('slider_thumbnail');
 
         if( $images ): ?>
-
+              <?php $i = 0; ?>
               <div class="mask">
                 <ul class="news-slider">
                     <?php foreach( $images as $image ): ?>
                         <li>
-                            <img class="news-slide-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <img id="<?php $i ?>" class="news-slide-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                             <p class="news-slide-caption"><?php echo $image['caption']; ?></p>
                         </li>
+                        <?php $i++; ?>
                     <?php endforeach; ?>
                 </ul>
              </div>
@@ -67,7 +68,6 @@ get_header();
                    <li>1</li>
                    <li>2</li>
                    <li>3</li>
-                   <li>4</li>
                 </ul>
 
                 <span class="control prev">Prev</span>
@@ -84,7 +84,7 @@ get_header();
 				    <div class="clearfix"></div>
 
 				<p>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_like_count( $like_count ); ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo $like_count; ?>
 				</p>
     <div class="clearfix"></div>
 
