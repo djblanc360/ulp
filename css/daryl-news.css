@@ -175,7 +175,7 @@ video.news-video-thumbnail {
 
 .news-gallery-post .left-news-slider-arrow {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 8%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -190,7 +190,7 @@ video.news-video-thumbnail {
 
 .news-gallery-post .right-news-slider-arrow {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 92%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -204,5 +204,11 @@ video.news-video-thumbnail {
 }
 
 .news-gallery-post .left-news-slider-arrow:hover .right-news-slider-arrow:hover  {
-    background-color: black;
+    background-color: white;
+    opacity: 0.5;
+    color:#A3A3A3;
+}
+
+i.left-news-slider-arrow i.right-news-slider-arrow {
+  color:#A3A3A3;
 }
