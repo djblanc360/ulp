@@ -175,7 +175,7 @@ video.news-video-thumbnail {
 
 .news-gallery-post .left-news-slider-arrow {
     position: absolute;
-    top: 75%;
+    top: 30%;
     left: 8%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -190,7 +190,7 @@ video.news-video-thumbnail {
 
 .news-gallery-post .right-news-slider-arrow {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 92%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -209,7 +209,7 @@ video.news-video-thumbnail {
     color:#A3A3A3;
 }
 
-.left-news-slider-arrow .right-news-slider-arrow {
+button.left-news-slider-arrow button.right-news-slider-arrow {
   color:#A3A3A3;
   background-color: white;
 }
