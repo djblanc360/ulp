@@ -75,9 +75,8 @@ get_header();
         <div class="post-text"> <?php the_excerpt(); ?> </div>
 				<a href="<?php the_permalink(); ?>" class="btn btn-green read-more-button">Read More</a>
 				    <div class="clearfix"></div>
-
 				<p>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_simple_likes_button( get_comment_ID(), 1 ); ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_like_count( $count ); ?> <?php echo get_post_meta($post->ID, "Count", true);; ?>
 				</p>
     <div class="clearfix"></div>
 
