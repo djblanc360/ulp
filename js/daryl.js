@@ -13,7 +13,8 @@ jQuery(window).load(function() {
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true
+      adaptiveHeight: false,
+      arrows: false
   });
 
 });
