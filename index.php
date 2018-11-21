@@ -27,7 +27,7 @@ get_header();
     <div class="ms-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
       <?php
-
+        $postID = get_the_ID();
         $audio = get_field( "audio_thumbnail" );
         $video = get_field( "video_thumbnail" );
 
@@ -76,7 +76,7 @@ get_header();
 				<a href="<?php the_permalink(); ?>" class="btn btn-green read-more-button">Read More</a>
 				    <div class="clearfix"></div>
 				<p>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_like_count( $count ); ?> <?php echo   get_post_meta( get_the_ID(), "_likes_number", true ); ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_like_count( $count ); ?> <?php echo   get_post_meta( $postID, "_likes_number", true ); ?>
 				</p>
     <div class="clearfix"></div>
 
