@@ -80,7 +80,7 @@ get_header();
                 <?php
                     $postLikes = get_post_meta( $postID, "_liked", true );
                     if ( $postLikes ) { echo $postLikes }
-                    else { echo "0";
+                    else { echo "0"; }
                 ?>
 				</p>
     <div class="clearfix"></div>
