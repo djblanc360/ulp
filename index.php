@@ -77,7 +77,7 @@ get_header();
 				    <div class="clearfix"></div>
 
 				<p>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_like_count( $number ); ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo '<span class="sl-count">' . $number . '</span>' ?>
 				</p>
     <div class="clearfix"></div>
 
