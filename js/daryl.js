@@ -16,5 +16,11 @@ jQuery(window).load(function() {
       adaptiveHeight: false,
       arrows: true
   });
+  $('.leftArrow').on('click', function(){
+      $('.single-item').slick("slickPrev");
+  });
+  $('.rightArrow').on('click', function(){
+      $('.single-item').slick("slickNext");
+  });
 
 });

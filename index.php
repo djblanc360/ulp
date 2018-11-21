@@ -60,8 +60,10 @@ get_header();
                         </div>
                         <?php $i++; ?>
                     <?php endforeach; ?>
-                    <button type="button" class="slick-prev"><</button>
-                    <button type="button" class="slick-next">></button>
+                </div>
+                <div>
+                    <button class="leftArrow"> < </button>
+                    <button class="rightArrow"> > </button>
                 </div>
         <?php endif; ?>
 
