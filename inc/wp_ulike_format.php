@@ -1,4 +1,5 @@
 <?php
+//remove +
 add_filter('wp_ulike_format_number','wp_ulike_new_format_number',10,3);
 function wp_ulike_new_format_number($value, $num, $plus){
 	if ($num >= 1000 && get_option('wp_ulike_format_number') == '1'):
@@ -9,14 +10,11 @@ function wp_ulike_new_format_number($value, $num, $plus){
 	return $value;
 }
 
-add_filter('wp_ulike_extra_structured_data', 'wp_ulike_add_extra_structured_data', 10);
-function wp_ulike_add_extra_structured_data(){
-	$post_meta = '<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">';
-	$post_meta .= '<meta itemprop="name" content="WordPress" />';
-	$post_meta .= '<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">';
-	$post_meta .= '<meta itemprop="url" content="https://s.w.org/about/images/logos/wordpress-logo-hoz-rgb.png" />';
-	$post_meta .= '</div>';
-	$post_meta .= '</div>';
-	return $post_meta;
+
+//add 0 count
+add_filter('wp_ulike_count_box_template', 'wp_ulike_change_my_count_box_template', 10, 2);
+function wp_ulike_change_my_count_box_template($string, $counter) {
+	$num = preg_replace("/[^0-9,.]/", "", $counter);
+	if($num == 0) return $string;
 }
  ?>
