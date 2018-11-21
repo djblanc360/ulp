@@ -13,7 +13,7 @@ jQuery(window).load(function() {
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: false,
+      adaptiveHeight: true,
       arrows: false
   });
   $('.left-news-slider-arrow').on('click', function(){
