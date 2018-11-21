@@ -175,7 +175,7 @@ video.news-video-thumbnail {
 
 .news-gallery-post .left-news-slider-arrow {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 8%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -190,12 +190,10 @@ video.news-video-thumbnail {
 
 .news-gallery-post .right-news-slider-arrow {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 92%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
     font-size: 16px;
     border: none;
     cursor: pointer;
