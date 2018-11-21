@@ -33,7 +33,6 @@ get_header();
 						?>
 					</div>
 					<div class="col-sm-3">
-						<?php echo get_simple_likes_button( get_comment_ID(), 1 ); ?>
 						<?php if(function_exists('wp_ulike')) wp_ulike('get'); ?>
 						<?php get_sidebar(); ?>
 					</div>
