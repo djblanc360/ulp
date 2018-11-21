@@ -16,10 +16,10 @@ jQuery(window).load(function() {
       adaptiveHeight: false,
       arrows: false
   });
-  $('.leftArrow').on('click', function(){
+  $('.left-news-slider-arrow').on('click', function(){
       $('.news-slider').slick("slickPrev");
   });
-  $('.rightArrow').on('click', function(){
+  $('.right-news-slider-arrow').on('click', function(){
       $('.news-slider').slick("slickNext");
   });
 
