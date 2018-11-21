@@ -62,8 +62,8 @@ get_header();
                     <?php endforeach; ?>
                 </div>
                 <div>
-                    <button class="leftArrow"><i class="fas fa-angle-left"></i></button>
-                    <button class="rightArrow"><i class="fas fa-angle-right"></i></button>
+                    <button class="left-news-slider-arrow"><i class="fas fa-angle-left"></i></button>
+                    <button class="right-news-slider-arrow"><i class="fas fa-angle-right"></i></button>
                 </div>
         <?php endif; ?>
 
