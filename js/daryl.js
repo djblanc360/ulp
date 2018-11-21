@@ -14,7 +14,7 @@ jQuery(window).load(function() {
       speed: 300,
       slidesToShow: 1,
       adaptiveHeight: false,
-      arrows: true
+      arrows: false
   });
   $('.leftArrow').on('click', function(){
       $('.news-slider').slick("slickPrev");
