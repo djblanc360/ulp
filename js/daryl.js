@@ -7,13 +7,13 @@ jQuery(window).load(function() {
     columnWidth: '.ms-item',
   });
 
-
-});
-
-
-//Slick Slider
-$(document).ready(function(){
+  //Slick Slider
   $('.news-slider').slick({
-    setting-name: setting-value
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
   });
+
 });
