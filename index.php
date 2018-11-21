@@ -51,7 +51,7 @@ get_header();
         <?php $images = get_field('slider_thumbnail');
 
         if( $images ): ?>
-              <?php $i = 0; ?>
+
                 <div class="news-slider">
                     <?php foreach( $images as $image ): ?>
                         <div>
@@ -62,8 +62,8 @@ get_header();
                     <?php endforeach; ?>
                 </div>
                 <div>
-                    <button class="leftArrow"> < </button>
-                    <button class="rightArrow"> > </button>
+                    <button class="leftArrow"><i class="fas fa-angle-left"></i></button>
+                    <button class="rightArrow"><i class="fas fa-angle-right"></i></button>
                 </div>
         <?php endif; ?>
 
