@@ -216,4 +216,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Like formatter
+ */
 require get_template_directory() . '/inc/wp_ulike_format.php';

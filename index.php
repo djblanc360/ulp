@@ -77,7 +77,7 @@ get_header();
 				    <div class="clearfix"></div>
 				<p>
         <?php $postLikes = wp_ulike_get_post_likes(get_the_ID());?>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | Likes <?php if($postLikes) { echo $postLikes ; } else { echo '<span>0</span>' } ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | Likes <?php if($postLikes) { echo $postLikes ; } else { echo '<span>0</span>'; } ?>
 
 				</p>
     <div class="clearfix"></div>
