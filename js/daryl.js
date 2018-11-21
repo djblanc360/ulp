@@ -17,10 +17,10 @@ jQuery(window).load(function() {
       arrows: true
   });
   $('.leftArrow').on('click', function(){
-      $('.single-item').slick("slickPrev");
+      $('.news-slider').slick("slickPrev");
   });
   $('.rightArrow').on('click', function(){
-      $('.single-item').slick("slickNext");
+      $('.news-slider').slick("slickNext");
   });
 
 });
