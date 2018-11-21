@@ -60,9 +60,9 @@ get_header();
                         </div>
                         <?php $i++; ?>
                     <?php endforeach; ?>
+                    <button type="button" class="slick-prev"><</button>
+                    <button type="button" class="slick-next">></button>
                 </div>
-                <button type="button" class="slick-prev"><</button>
-                <button type="button" class="slick-next">></button>
         <?php endif; ?>
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
