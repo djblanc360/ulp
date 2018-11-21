@@ -215,13 +215,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-/**
- * Code for post likes
-*/
-require_once( get_template_directory(). '/inc/post-like.php');
-
-/**
- * Code forslider
-*/
-//require_once( get_template_directory(). '/inc/post-slider.php');
