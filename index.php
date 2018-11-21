@@ -76,7 +76,7 @@ get_header();
 				<a href="<?php the_permalink(); ?>" class="btn btn-green read-more-button">Read More</a>
 				    <div class="clearfix"></div>
 				<p>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_like_count( $count ); ?> <?php echo sl_format_count( $number ); ?>
+				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | <?php echo get_like_count( $count ); ?> <?php echo post_ip_likes( $user_ip, $post_id, $is_comment ); ?>
 				</p>
     <div class="clearfix"></div>
 
