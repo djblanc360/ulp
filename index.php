@@ -51,7 +51,7 @@ get_header();
         <?php $images = get_field('slider_thumbnail');
 
         if( $images ): ?>
-
+            <div class="news-gallery-post">
                 <div class="news-slider">
                     <?php foreach( $images as $image ): ?>
                         <div>
@@ -61,10 +61,10 @@ get_header();
                         <?php $i++; ?>
                     <?php endforeach; ?>
                 </div>
-                <div>
                     <button class="left-news-slider-arrow"><i class="fas fa-angle-left"></i></button>
                     <button class="right-news-slider-arrow"><i class="fas fa-angle-right"></i></button>
-                </div>
+
+            </div>
         <?php endif; ?>
 
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
