@@ -12,3 +12,8 @@ jQuery(window).load(function() {
 
 
 //Slick Slider
+$(document).ready(function(){
+  $('.news-slider').slick({
+    setting-name: setting-value
+  });
+});
