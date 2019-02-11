@@ -1,0 +1,7 @@
+.blog .ms-item{padding:0;border-radius:5px;overflow:hidden}
+.blog .ms-item .news-gallery-post .left-news-slider-arrow,.blog .ms-item .news-gallery-post .right-news-slider-arrow{top:45%}
+.blog .ms-item video{width:100% !important}
+.blog .ms-item .ms-item-text{padding:1rem}
+.blog .post-title{font-weight:bold}
+.blog .blogPostMeta{text-transform:uppercase;font-size:.8rem;margin-bottom:.5rem}
+.blog .read-more-button{margin-bottom:1rem;font-family:'Open Sans'}

@@ -1,0 +1,33 @@
+.page-template-page-contact #contactForm { background: #f2f2f2; }
+
+.page-template-page-contact #contactForm .contactFormContainer { background: #fff; border-top: 2px solid #FDB827; margin-top: 40px; -webkit-box-shadow: 0 0 25px -9px #333; box-shadow: 0 0 25px -9px #333; -webkit-transform: scale(1.01); transform: scale(1.01); }
+
+.page-template-page-contact #contactForm .contactFormContainer h3:first-child { margin-top: 0; }
+
+.page-template-page-contact #contactForm .contactFormContainer hr { width: 100px; border-color: #FDB827; margin-left: 0; border-width: 2px; }
+
+.page-template-page-contact #contactForm .contactFormContainer input[type="text"], .page-template-page-contact #contactForm .contactFormContainer input[type="email"], .page-template-page-contact #contactForm .contactFormContainer input[type="url"], .page-template-page-contact #contactForm .contactFormContainer input[type="tel"], .page-template-page-contact #contactForm .contactFormContainer textarea, .page-template-page-contact #contactForm .contactFormContainer select { width: 100%; padding: 10px; border-color: #f2f2f2; border-radius: 0; margin: 5px; }
+
+.page-template-page-contact #contactForm .contactFormContainer input[type="submit"] { padding: 10px 25px; border-radius: 25px; border: 2px solid #FDB827; font-size: 0.8rem; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; line-height: 1.5; }
+
+.page-template-page-contact #contactForm .contactFormContainer input[type="submit"]:hover { cursor: pointer; }
+
+.page-template-page-contact #contactForm .contactFormContainer.inactive { -webkit-transform: scale(1); transform: scale(1); -webkit-box-shadow: none; box-shadow: none; border-top-color: #ddd; }
+
+.page-template-page-contact #contactForm .contactFormContainer.inactive hr { border-color: #ddd; }
+
+.page-template-page-contact #researchPark { background: #0A2B4E; color: #fff; padding-top: 0; padding-bottom: 0; min-height: 400px; }
+
+.page-template-page-contact #researchPark h2 { color: #fff; }
+
+.page-template-page-contact #researchPark .headingSpacer { background-color: #FDB827; }
+
+.page-template-page-contact #researchPark .aboutIntroSliderContainer { height: 400px; }
+
+.page-template-page-contact #researchPark .aboutIntroSliderContainer .aboutIntroSlider { position: absolute; top: 0; right: 0; left: 0; bottom: 0; overflow: hidden; }
+
+.page-template-page-contact #researchPark .aboutIntroSliderContainer .aboutIntroSlider .aboutIntroSliderItem { height: 400px; background-position: center; background-size: cover; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29udGFjdC5jc3MiLCJzb3VyY2VzIjpbImNvbnRhY3Quc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFhQSxBQUNFLDJCQUR5QixDQUN6QixZQUFZLENBQUMsRUFDWCxVQUFVLEVBQUUsT0FBTyxHQTZDcEI7O0FBL0NILEFBR0ksMkJBSHVCLENBQ3pCLFlBQVksQ0FFVixxQkFBcUIsQ0FBQyxFQUNwQixVQUFVLEVBZlIsSUFBSSxFQWdCTixVQUFVLEVBQUUsR0FBRyxDQUFDLEtBQUssQ0FqQmxCLE9BQU8sRUFrQlYsVUFBVSxFQUFFLElBQUksRUFDaEIsVUFBVSxFQUFFLGtCQUFrQixFQUM5QixTQUFTLEVBQUUsV0FBVyxHQXNDdkI7O0FBOUNMLEFBVVEsMkJBVm1CLENBQ3pCLFlBQVksQ0FFVixxQkFBcUIsQ0FNbkIsRUFBRSxBQUNDLFlBQVksQ0FBQyxFQUNaLFVBQVUsRUFBRSxDQUFDLEdBQ2Q7O0FBWlQsQUFjTSwyQkFkcUIsQ0FDekIsWUFBWSxDQUVWLHFCQUFxQixDQVduQixFQUFFLENBQUMsRUFDRCxLQUFLLEVBQUUsS0FBSyxFQUNaLFlBQVksRUE1QlgsT0FBTyxFQTZCUixXQUFXLEVBQUUsQ0FBQyxFQUNkLFlBQVksRUFBRSxHQUFHLEdBQ2xCOztBQW5CUCxBQW9CTSwyQkFwQnFCLENBQ3pCLFlBQVksQ0FFVixxQkFBcUIsQ0FpQm5CLEtBQUssQ0FBQSxBQUFBLElBQUMsQ0FBSyxNQUFNLEFBQVgsR0FwQlosMkJBQTJCLENBQ3pCLFlBQVksQ0FFVixxQkFBcUIsQ0FpQkMsS0FBSyxDQUFBLEFBQUEsSUFBQyxDQUFLLE9BQU8sQUFBWixHQXBCaEMsMkJBQTJCLENBQ3pCLFlBQVksQ0FFVixxQkFBcUIsQ0FpQnNCLEtBQUssQ0FBQSxBQUFBLElBQUMsQ0FBSyxLQUFLLEFBQVYsR0FwQnJELDJCQUEyQixDQUN6QixZQUFZLENBRVYscUJBQXFCLENBaUJ5QyxLQUFLLENBQUEsQUFBQSxJQUFDLENBQUssS0FBSyxBQUFWLEdBcEJ4RSwyQkFBMkIs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 */
+
+/*# sourceMappingURL=contact.css.map */

@@ -34,6 +34,9 @@
 			        <a class="nav-link" href="<?php echo site_url(); ?>/our-events/">Events</a>
 			      </li>
 			      <li class="nav-item">
+			        <a class="nav-link" href="<?php echo site_url(); ?>/contact/">Contact</a>
+			      </li>
+			      <li class="nav-item">
 			        <a class="nav-link nav-cta" href="<?php echo site_url(); ?>/apply-now/">Apply Now</a>
 			      </li>
 			    </ul>

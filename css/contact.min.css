@@ -1,0 +1,15 @@
+.page-template-page-contact #contactForm{background:#f2f2f2}
+.page-template-page-contact #contactForm .contactFormContainer{background:#fff;border-top:2px solid #fdb827;margin-top:40px;-webkit-box-shadow:0 0 25px -9px #333;box-shadow:0 0 25px -9px #333;-webkit-transform:scale(1.01);transform:scale(1.01)}
+.page-template-page-contact #contactForm .contactFormContainer h3:first-child{margin-top:0}
+.page-template-page-contact #contactForm .contactFormContainer hr{width:100px;border-color:#fdb827;margin-left:0;border-width:2px}
+.page-template-page-contact #contactForm .contactFormContainer input[type="text"],.page-template-page-contact #contactForm .contactFormContainer input[type="email"],.page-template-page-contact #contactForm .contactFormContainer input[type="url"],.page-template-page-contact #contactForm .contactFormContainer input[type="tel"],.page-template-page-contact #contactForm .contactFormContainer textarea,.page-template-page-contact #contactForm .contactFormContainer select{width:100%;padding:10px;border-color:#f2f2f2;border-radius:0;margin:5px}
+.page-template-page-contact #contactForm .contactFormContainer input[type="submit"]{padding:10px 25px;border-radius:25px;border:2px solid #fdb827;font-size:.8rem;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;line-height:1.5}
+.page-template-page-contact #contactForm .contactFormContainer input[type="submit"]:hover{cursor:pointer}
+.page-template-page-contact #contactForm .contactFormContainer.inactive{-webkit-transform:scale(1);transform:scale(1);-webkit-box-shadow:none;box-shadow:none;border-top-color:#ddd}
+.page-template-page-contact #contactForm .contactFormContainer.inactive hr{border-color:#ddd}
+.page-template-page-contact #researchPark{background:#0a2b4e;color:#fff;padding-top:0;padding-bottom:0;min-height:400px}
+.page-template-page-contact #researchPark h2{color:#fff}
+.page-template-page-contact #researchPark .headingSpacer{background-color:#fdb827}
+.page-template-page-contact #researchPark .aboutIntroSliderContainer{height:400px}
+.page-template-page-contact #researchPark .aboutIntroSliderContainer .aboutIntroSlider{position:absolute;top:0;right:0;left:0;bottom:0;overflow:hidden}
+.page-template-page-contact #researchPark .aboutIntroSliderContainer .aboutIntroSlider .aboutIntroSliderItem{height:400px;background-position:center;background-size:cover}

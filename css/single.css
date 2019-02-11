@@ -1,0 +1,15 @@
+.single .singleBody { max-width: 767px; width: 100%; }
+
+.single .singleBody .entry-header { position: relative; margin-bottom: 1rem; color: #ddd; text-transform: uppercase; font-weight: 100; font-size: 0.8rem; font-family: 'Open Sans'; }
+
+.single .singleBody .entry-header .wpulike { position: absolute; top: 0; right: 0; }
+
+.single .singleBody .post-thumbnail { padding: 15px; background: #fff; border-radius: 5px; border: 1px solid #ddd; margin-bottom: 2rem; }
+
+.single .news-gallery-post { max-width: 1100px; width: 100%; }
+
+.single .news-gallery-post .left-news-slider-arrow, .single .news-gallery-post .right-news-slider-arrow { top: 50%; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2luZ2xlLmNzcyIsInNvdXJjZXMiOlsic2luZ2xlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsQUFDRSxPQURLLENBQ0wsV0FBVyxDQUFDLEVBQ1YsU0FBUyxFQUFFLEtBQUssRUFDaEIsS0FBSyxFQUFFLElBQUksR0FzQlo7O0FBekJILEFBSUksT0FKRyxDQUNMLFdBQVcsQ0FHVCxhQUFhLENBQUMsRUFDWixRQUFRLEVBQUUsUUFBUSxFQUNsQixhQUFhLEVBQUUsSUFBSSxFQUNuQixLQUFLLEVBQUUsSUFBSSxFQUNYLGNBQWMsRUFBRSxTQUFTLEVBQ3pCLFdBQVcsRUFBRSxHQUFHLEVBQ2hCLFNBQVMsRUFBRSxNQUFNLEVBQ2pCLFdBQVcsRUFBRSxXQUFXLEdBTXpCOztBQWpCTCxBQVlNLE9BWkMsQ0FDTCxXQUFXLENBR1QsYUFBYSxDQVFYLFFBQVEsQ0FBQyxFQUNQLFFBQVEsRUFBRSxRQUFRLEVBQ2xCLEdBQUcsRUFBRSxDQUFDLEVBQ04sS0FBSyxFQUFFLENBQUMsR0FDVDs7QUFoQlAsQUFrQkksT0FsQkcsQ0FDTCxXQUFXLENBaUJULGVBQWUsQ0FBQyxFQUNkLE9BQU8sRUFBRSxJQUFJLEVBQ2IsVUFBVSxFQUFFLElBQUksRUFDaEIsYUFBYSxFQUFFLEdBQUcsRUFDbEIsTUFBTSxFQUFFLGNBQWMsRUFDdEIsYUFBYSxFQUFFLElBQUksR0FDcEI7O0FBeEJMLEFBMEJFLE9BMUJLLENBMEJMLGtCQUFrQixDQUFDLEVBQ2pCLFNBQVMsRUFBRSxNQUFNLEVBQ2pCLEtBQUssRUFBRSxJQUFJLEdBQ1o7O0FBN0JILEFBOEJFLE9BOUJLLENBOEJMLGtCQUFrQixDQUFDLHVCQUF1QixFQTlCNUMsT0FBTyxDQThCdUMsa0JBQWtCLENBQUMsd0JBQXdCLENBQUMsRUFDdEYsR0FBRyxFQUFFLEdBQUcsR0FDVCJ9 */
+
+/*# sourceMappingURL=single.css.map */

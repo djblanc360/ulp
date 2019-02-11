@@ -85,7 +85,7 @@ if ( ! function_exists( 'ulp_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Post_Formats
 		 */
-		add_theme_support( 'post-formats', array( 'video', 'gallery', 'audio' ) );
+		add_theme_support( 'post-formats', array( 'video', 'gallery', 'audio' ) );		
 	}
 endif;
 add_action( 'after_setup_theme', 'ulp_setup' );
@@ -153,7 +153,6 @@ function ulp_widgets_init() {
 }
 add_action( 'widgets_init', 'ulp_widgets_init' );
 
-
 /**
  * Enqueue scripts and styles.
  */
@@ -169,9 +168,15 @@ function ulp_scripts() {
 	wp_enqueue_style( 'facility-style', get_template_directory_uri() . '/css/facility.min.css' );
 	wp_enqueue_style( 'events-style', get_template_directory_uri() . '/css/events.min.css' );
 	wp_enqueue_style( 'apply-style', get_template_directory_uri() . '/css/apply.min.css' );
+	wp_enqueue_style( 'contact-style', get_template_directory_uri() . '/css/contact.min.css' );
+	wp_enqueue_style( 'single-style', get_template_directory_uri() . '/css/single.min.css' );
 	wp_enqueue_style( 'daryl-news-style', get_template_directory_uri() . '/css/daryl-news.css' );
+	wp_enqueue_style( 'blog-style', get_template_directory_uri() . '/css/blog.min.css' );
 
 	wp_enqueue_script( 'vendor-js', get_template_directory_uri() . '/js/vendor.min.js', '', '', true );
+	wp_enqueue_script( 'googleMaps-js', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAshTZGW63_MyZPkJST5tbhVe3bQgjdjJo', '', '', true );
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', '', '', true );
+	wp_enqueue_script( 'parallax-js', get_template_directory_uri() . '/js/parallax.min.js', '', '', true );
 	wp_enqueue_script( 'daryl-js', get_template_directory_uri() . '/js/daryl.js', '', '', true );
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.min.js', '', '', true );
 	wp_enqueue_script( 'ulp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

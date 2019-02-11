@@ -15,7 +15,8 @@
 get_header();
 ?>
 
-<h2>The latest news from ULP</h2>
+<h2>The latest News from ULP</h2>
+<div class="headingSpacer mx-auto"></div>
 <div class="container">
 <div class="row" id="ms-container">
 
@@ -56,7 +57,6 @@ get_header();
                     <?php foreach( $images as $image ): ?>
                         <div>
                             <img id="<?php $i ?>" class="news-slide-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                            <p class="news-slide-caption"><?php echo $image['caption']; ?></p>
                         </div>
                         <?php $i++; ?>
                     <?php endforeach; ?>
@@ -66,22 +66,22 @@ get_header();
 
             </div>
         <?php endif; ?>
-
+        <div class="ms-item-text">
             <h6 class="post-title"><a href="<?php the_permalink(); ?>" class="post-title-link"><?php the_title(); ?></a></h6>
-						<P>
-							<?php the_author(); ?>  | <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>
-						</P>
+                <p>
+                    <?php $postLikes = wp_ulike_get_post_likes(get_the_ID());?>
+                     <i class="far fa-calendar-alt"></i> <?php echo get_the_date('M d, Y'); ?> | <i class="far fa-comments"></i> <?php echo get_comments_number(); ?> | <i class="far fa-heart"></i> <?php if($postLikes) { echo $postLikes ; } else { echo '<span>0</span>'; } ?>
+                </p>
 
         <div class="post-text"> <?php the_excerpt(); ?> </div>
-				<a href="<?php the_permalink(); ?>" class="btn btn-green read-more-button">Read More</a>
-				    <div class="clearfix"></div>
-				<p>
-        <?php $postLikes = wp_ulike_get_post_likes(get_the_ID());?>
-				<?php echo get_comments_number(); ?> comments  |	<?php echo get_the_date(); ?> | Likes <?php if($postLikes) { echo $postLikes ; } else { echo '<span>0</span>'; } ?>
+    		<a href="<?php the_permalink(); ?>" class="button read-more-button">Read More</a>
+		    <div class="clearfix"></div>
+            <p class="blogPostMeta">
+                <?php the_author(); ?>  | <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>
+            </p>
+        <div class="clearfix"></div>
 
-				</p>
-    <div class="clearfix"></div>
-
+        </div>
     </div>
 
     <?php endwhile; ?>
@@ -101,9 +101,6 @@ get_header();
 <hr>
 <!--paginationn functions here -->
 <div class="news-navigation">
-	<span class="pagination-buttons">
-			<a href="<?php echo site_url(); ?>/news/"><i class="fas fa-home"></i></a>
-	</span>
 	<span class="nav-previous pagination-buttons"><?php previous_posts_link( '<i class="fas fa-angle-left"></i>' ); ?></span>
 	<span class="nav-next pagination-buttons"><?php next_posts_link( '<i class="fas fa-angle-right"></i>' ); ?></span>
 </div>

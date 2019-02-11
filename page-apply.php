@@ -35,30 +35,30 @@ get_header();
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="applyStepContainer">
-								<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-								<h3>Step One</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<img src="<?php the_field('step_1_img'); ?>">
+								<h3><?php the_field('step_1'); ?></h3>
+								<?php the_field('step_1_description'); ?>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="applyStepContainer">
-								<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-								<h3>Step Two</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<img src="<?php the_field('step_2_img'); ?>">
+								<h3><?php the_field('step_2'); ?></h3>
+								<?php the_field('step_2_description'); ?>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="applyStepContainer">
-								<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-								<h3>Step Three</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<img src="<?php the_field('step_3_img'); ?>">
+								<h3><?php the_field('step_3'); ?></h3>
+								<?php the_field('step_3_description'); ?>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="applyStepContainer">
-								<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-								<h3>Step Four</h3>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<img src="<?php the_field('step_4_img'); ?>">
+								<h3><?php the_field('step_4'); ?></h3>
+								<?php the_field('step_4_description'); ?>
 							</div>
 						</div>
 					</div>
@@ -71,77 +71,19 @@ get_header();
 				<div class="container">
 					<h2 class="text-center">Apply for Membership with ULP</h2>
 
-					<div class="applyFormContainer">
-						<h3>Primary Contact Information</h3>
-						<hr>
-						<div class="row">
-							<div class="col-sm-6">
-								<input type="text" placeholder="First Name">
-							</div>
-							<div class="col-sm-6">
-								<input type="text" placeholder="Last Name">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<input type="tel" placeholder="Phone">
-							</div>
-							<div class="col-sm-6">
-								<input type="email" placeholder="Email">
-							</div>
-						</div>
-						<input type="text" placeholder="Business Name">
-						<input type="text" placeholder="Business Address">
-					</div>
-
-					<div class="applyFormContainer inactive">
-						<h3>Business Information</h3>
-						<hr>
-						<input type="text" placeholder="Business Purpose">
-						<input type="text" placeholder="Problem Statement">
-						<input type="text" placeholder="Solution Statement">
-						<input type="text" placeholder="Revenue Model (if available)">
-						<input type="text" placeholder="Route to Market">
-						<input type="text" placeholder="Current Business Status">
-					</div>
-
-					<div class="applyFormContainer inactive">
-						<h3>Application Requirements</h3>
-						<hr>
-						<div class="row">
-							<div class="col-sm-7">
-								<p>Funding Received (<a href="">See Requirements</a>)</p>
-							</div>
-							<div class="col-sm-5">
-								<input type="checkbox" checked="checked">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-7">
-								<p>Pitch Deck (<a href="">Download Sample</a>)</p>
-							</div>
-							<div class="col-sm-5">
-								<input type="file">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-7">
-								<p>Pitch Video (<a href="">Download Sample</a>)</a></p>
-							</div>
-							<div class="col-sm-5">
-								<input type="file">
-							</div>
-						</div>
+					<div class="applyFormContainer p-3 p-lg-5 mb-4">
+						<!-- <?php echo do_shortcode('[contact-form-7 id="221" title="Application Form"]'); ?> -->
+						<h3 class="text-center">Please check back soon.</h3><p class="text-center">Taking applications beginning January 2019.</p>
 					</div>
 
 				</div>
 			</section>
 
-			<section id="applySeeMore">
+			<section id="applySeeMore" style="background-image: url(<?php the_field('see_more_bg'); ?>);">
 				<div class="applySeeMoreInner text-center container">
-					<h2>Want to see more before making a decision?</h2>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-						<p><a href="" class="button cta">Let's give you a Tour</a></p>
+					<h2><?php the_field('see_more_title'); ?></h2>
+						<?php the_field('see_more_description'); ?>
+						<p><a href="<?php echo site_url(); ?>/contact/" class="button cta">Contact Us</a></p>
 				</div>
 			</section>
 

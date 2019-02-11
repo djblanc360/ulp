@@ -18,6 +18,7 @@ get_header();
 				<div class="facilityIntroInner">
 					
 					<h2>Unprecedented Access at an Affordable Price</h2>
+					<div class="headingSpacer mx-auto"></div>
 					<?php
 					while ( have_posts() ) :
 						the_post();
@@ -32,7 +33,7 @@ get_header();
 					endwhile; // End of the loop.
 					?>
 
-					<p><a href="" class="button cta">Apply for Membership</a></p>
+					<p><a href="#facilityFeature" class="button cta mx-2">In Suite Availability</a> <a href="#addServices" class="button cta mx-2"><?php the_field('shared_equipment_title'); ?></a> <a href="#uniServices" class="button cta mx-2"><?php the_field('shared_amenities_title'); ?></a></p>
 
 				</div>
 
@@ -49,7 +50,7 @@ get_header();
 					<div class="facilityItemContainerSlider">
 
 						<div>
-							<div class="facilityItemContainer">
+							<div class="facilityItemContainer pr-4">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="facilityItemImgContainer">
@@ -71,7 +72,7 @@ get_header();
 										</div>
 									</div>
 									<div class="col-sm-6">
-										<div class="facilityItemContent">
+										<div class="facilityItemContent py-4">
 											<h2><?php the_field('space_1_title'); ?></h2>
 											<?php the_field('space_1_text'); ?>
 											<div class="amenitiesContainer">
@@ -124,17 +125,17 @@ get_header();
 													</div>
 												</div>
 											</div>
+											<p class="applyNowContainer">
+												<a href="" class="button cta">Apply Now</a> <a href="<?php echo site_url(); ?>/contact/" class="button">Contact Us</a>
+											</p>
 										</div>	
 									</div>
 								</div>
-								<p class="text-center applyNowContainer">
-									<a href="" class="button cta">Apply Now</a> <a href="" class="button">Schedule a Tour</a>
-								</p>
 							</div>
 						</div>
 
 						<div>
-							<div class="facilityItemContainer">
+							<div class="facilityItemContainer pr-4">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="facilityItemImgContainer">
@@ -156,7 +157,7 @@ get_header();
 										</div>
 									</div>
 									<div class="col-sm-6">
-										<div class="facilityItemContent">
+										<div class="facilityItemContent py-4">
 											<h2><?php the_field('space_2_title'); ?></h2>
 											<?php the_field('space_2_text'); ?>
 											<div class="amenitiesContainer">
@@ -209,17 +210,16 @@ get_header();
 													</div>
 												</div>
 											</div>
+											<p class="applyNowContainer">
+												<a href="" class="button cta">Apply Now</a> <a href="<?php echo site_url(); ?>/contact/" class="button">Contact Us</a>
 										</div>	
 									</div>
 								</div>
-								<p class="text-center applyNowContainer">
-									<a href="" class="button cta">Apply Now</a> <a href="" class="button">Schedule a Tour</a>
-								</p>
 							</div>
 						</div>
 
 						<div>
-							<div class="facilityItemContainer">
+							<div class="facilityItemContainer pr-4">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="facilityItemImgContainer">
@@ -241,7 +241,7 @@ get_header();
 										</div>
 									</div>
 									<div class="col-sm-6">
-										<div class="facilityItemContent">
+										<div class="facilityItemContent py-4">
 											<h2><?php the_field('space_3_title'); ?></h2>
 											<?php the_field('space_3_text'); ?>
 											<div class="amenitiesContainer">
@@ -294,17 +294,16 @@ get_header();
 													</div>
 												</div>
 											</div>
+											<p class="applyNowContainer">
+												<a href="" class="button cta">Apply Now</a> <a href="<?php echo site_url(); ?>/contact/" class="button">Contact Us</a>
 										</div>	
 									</div>
 								</div>
-								<p class="text-center applyNowContainer">
-									<a href="" class="button cta">Apply Now</a> <a href="" class="button">Schedule a Tour</a>
-								</p>
 							</div>
 						</div>
 
 						<div>
-							<div class="facilityItemContainer">
+							<div class="facilityItemContainer pr-4">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="facilityItemImgContainer">
@@ -326,7 +325,7 @@ get_header();
 										</div>
 									</div>
 									<div class="col-sm-6">
-										<div class="facilityItemContent">
+										<div class="facilityItemContent py-4">
 											<h2><?php the_field('space_4_title'); ?></h2>
 											<?php the_field('space_4_text'); ?>
 											<div class="amenitiesContainer">
@@ -379,12 +378,11 @@ get_header();
 													</div>
 												</div>
 											</div>
+											<p class="applyNowContainer">
+												<a href="" class="button cta">Apply Now</a> <a href="<?php echo site_url(); ?>/contact/" class="button">Contact Us</a>
 										</div>	
 									</div>
 								</div>
-								<p class="text-center applyNowContainer">
-									<a href="" class="button cta">Apply Now</a> <a href="" class="button">Schedule a Tour</a>
-								</p>
 							</div>
 						</div>
 					
@@ -393,11 +391,12 @@ get_header();
 				</div>
 			</section>
 
-			<section id="addServices" class="container text-center">
-				<h2>Shared Resources</h2>
-				<?php if( have_rows('service_offered') ): ?>
-
-					<div class="addServicesSlider">
+			<?php if( have_rows('service_offered') ): ?>
+				<section id="addServices" class="container text-center">
+					<h2><?php the_field('shared_equipment_title'); ?></h2>
+					<div class="headingSpacer mx-auto"></div>
+					<?php the_field('shared_equipment_description'); ?>
+					<div class="addServicesSlider mt-5">
 
 					<?php while( have_rows('service_offered') ): the_row(); 
 
@@ -417,66 +416,83 @@ get_header();
 							<?php if( $title ): ?>
 								<h3><?php echo $title; ?></h3>
 							<?php endif; ?>
-
+<!-- 
 							<?php if( $text ): ?>
 								<p><?php echo $text; ?></p>
 							<?php endif; ?>
-
+ -->
 						</div>
 
 					<?php endwhile; ?>
 
 					</div>
+				
+				</section>
 
-				<?php endif; ?><!-- 
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Private Receptionist</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</div>
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Conference Rooms</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</div>
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Shared Equipment</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</div>
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Break Rooms</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			<?php endif; ?>
+
+			
+
+			<section id="facilityCTA"">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-sm-9 d-flex align-items-center">
+							<h2><?php the_field('cta_title'); ?></h2>
+						</div>
+						<div class="col-sm-3 d-flex justify-content-center align-items-center">
+							<p><a href="<?php echo site_url(); ?>/wp-content/uploads/2018/11/UCI_facilities.pdf" class="button cta" target="_blank">Learn More</a></p>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Private Receptionist</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</div>
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Conference Rooms</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</div>
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Shared Equipment</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</div>
-					<div class="col-sm-3">
-						<img src="<?php echo site_url(); ?>/wp-content/themes/ulp/img/add-service-img.jpg" alt="">
-						<h3>Break Rooms</h3>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</div>
-				</div> -->
 			</section>
 
+			<?php if( have_rows('university_offered') ): ?>
+
+				<section id="uniServices" class="text-center">
+					<div class="container">
+						<h2><?php the_field('shared_amenities_title'); ?></h2>
+						<div class="headingSpacer mx-auto"></div>
+						<?php the_field('shared_amenities_description'); ?>
+						<div class="addServicesSlider mt-5">
+
+						<?php while( have_rows('university_offered') ): the_row(); 
+
+							// vars
+							$image = get_sub_field('university_image');
+							$title = get_sub_field('university_title');
+							$text = get_sub_field('university_text');
+
+							?>
+
+							<div class="addServicesItem">
+
+								<?php if( $image ): ?>
+									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+								<?php endif; ?>
+
+								<?php if( $title ): ?>
+									<h3><?php echo $title; ?></h3>
+								<?php endif; ?>
+	<!-- 
+								<?php if( $text ): ?>
+									<p><?php echo $text; ?></p>
+								<?php endif; ?>
+	 -->
+							</div>
+
+						<?php endwhile; ?>
+
+						</div>
+					</div>
+				
+				</section>
+
+			<?php endif; ?>
+
+			
+
 			<section id="footMap">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.3968078332755!2d-117.85684278496062!3d33.64687878071812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcde1587012cb7%3A0x2d277442e1a4333b!2sUCI+Research+Park!5e0!3m2!1sen!2sus!4v1539899408112" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div id="map-canvas"></div>
 			</section>
 
 		</main><!-- #main -->

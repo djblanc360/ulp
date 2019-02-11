@@ -1,12 +1,23 @@
 .page-template-page-about .aboutIntroInner{text-align:center}
-.page-template-page-about #nonProfit{background-color:#0a2b4e}
+.page-template-page-about #researchPark{background:#0a2b4e;color:#fff;padding-top:0;padding-bottom:0;min-height:400px}
+.page-template-page-about #researchPark h2{color:#fff}
+.page-template-page-about #researchPark .headingSpacer{background-color:#fdb827}
+.page-template-page-about #researchPark .aboutIntroSliderContainer{height:400px}
+.page-template-page-about #researchPark .aboutIntroSliderContainer .aboutIntroSlider{position:absolute;top:0;right:0;left:0;bottom:0;overflow:hidden}
+.page-template-page-about #researchPark .aboutIntroSliderContainer .aboutIntroSlider .aboutIntroSliderItem{height:400px;background-position:center;background-size:cover}
+.page-template-page-about #nonProfit{background-color:#0a2b4e;background-position:center;background-size:cover}
 .page-template-page-about #nonProfit .nonProfitInner{padding-top:6rem;padding-bottom:6rem;color:#fff}
+.page-template-page-about #nonProfit .nonProfitInner .headingSpacer{background-color:#fdb827}
+.page-template-page-about #ulpCommunity .headingSpacer{margin-left:0}
+.page-template-page-about #ulpCommunity h2{text-align:left}
+.page-template-page-about #ulpCommunity h2 span{color:#fdb827}
+.page-template-page-about #ulpCommunity p{text-align:left}
 .page-template-page-about #ulpCommunity a.memberLink{color:#000}
 .page-template-page-about #ulpCommunity a.memberLink:hover,.page-template-page-about #ulpCommunity a.memberLink:visited{color:#000;text-decoration:none}
 .page-template-page-about #ulpCommunity .commMemberContainer{margin-bottom:2rem}
-.page-template-page-about #ulpCommunity .commMemberContainer .commMemberImgWrap{background-size:cover;background-position:center;width:200px;height:200px;border-radius:50%;border:2px solid #fdb827;display:inline-block;margin:auto auto 1rem auto}
-.page-template-page-about #ulpCommunity .commMemberContainer .commMemberImgWrap img{border:2px solid #fff;border-radius:50%;overflow:hidden}
-.page-template-page-about #ulpCommunity .commMemberContainer .commMemberImgWrap:hover{border-color:#0a2b4e}
+.page-template-page-about #ulpCommunity .commMemberContainer h4{font-size:1rem;font-weight:bold}
+.page-template-page-about #ulpCommunity .commMemberContainer .memberTitle{text-transform:uppercase;font-size:.8rem}
+.page-template-page-about #ulpCommunity .commMemberContainer .commMemberImgWrap{background-size:cover;background-position:center;width:100%;height:250px;display:inline-block;margin:auto auto 1rem auto}
 .single-members .memberContainer{margin-top:2rem;margin-bottom:2rem}
 .single-members .memberName{margin-bottom:2rem}
 .single-members .memberInfoList li{text-transform:uppercase;font-size:.8rem;letter-spacing:.01rem;margin-bottom:10px}

@@ -1,4 +1,6 @@
+#masthead .navbar-brand img{padding-top:15px;padding-bottom:15px;width:200px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 #masthead.sticky{position:fixed;width:100%;left:0;top:0;z-index:100;border-top:0}
+#masthead.sticky .navbar-brand img{padding-top:0;padding-bottom:0}
 #masthead .navbar-nav .nav-item{padding-left:.5rem;padding-right:.5rem}
 #masthead .navbar-nav .nav-item:last-child{padding-right:0}
 #masthead .navbar-nav .nav-item:last-child a{padding:10px 25px;border-radius:25px;border:2px solid #fdb827;color:#fff;background-color:#fdb827;text-decoration:none;text-transform:uppercase;display:inline-block;font-size:.8rem;font-weight:bold}
@@ -15,10 +17,10 @@ footer#colophon .footerSocialList li a{width:60px;height:60px;background:#fdb827
 footer#colophon .footerSocialList li a i{font-size:1.5rem;color:#fff}
 body{font-family:'Libre Baskerville',serif}
 body h2{margin-bottom:2rem}
-body p,body li,body address{font-family:'Helvetica',Arial,sans-serif}
+body p,body li,body address{font-family:'Open Sans',Arial,sans-serif;font-weight:300}
 body ul{margin-left:0;text-align:left}
 body hr{border-top:1px solid #ddd}
-section{padding-top:4rem;padding-bottom:4rem}
+section{padding-top:2rem;padding-bottom:2rem}
 .button{padding:10px 25px;border-radius:25px;border:2px solid #0a2b4e;color:#0a2b4e;text-decoration:none;text-transform:uppercase;display:inline-block;font-size:.8rem;font-weight:bold;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 .button:hover{text-decoration:none;background-color:#0a2b4e;color:#fff}
 .button:visited{color:#0a2b4e}
@@ -35,6 +37,16 @@ section{padding-top:4rem;padding-bottom:4rem}
 .slick-dots li.slick-active{background-color:#999}
 .slick-dots li:hover{cursor:pointer}
 .slick-dots li:focus,.slick-dots li:active{outline:0}
-#pageIntro{background-color:#0a2b4e;background-size:cover;background-position:center;padding-top:6rem;padding-bottom:2rem}
-#pageIntro h1{color:#fdb827;text-transform:uppercase}
+.headingSpacer{background-color:#ddd;width:75px;height:2px;margin-top:2rem;margin-bottom:1rem}
+.parallax-window{background:transparent}
+#map-canvas{height:450px;width:100%}
+#map-canvas .gm-style img{max-width:100%}
+#map-canvas h3,#map-canvas p{font-size:1rem}
+#pageIntro{padding-top:6rem;padding-bottom:2rem}
+#pageIntro h1{color:#fdb827;font-weight:bold}
+#pageIntro .pageBread{color:#fdb827;text-transform:uppercase;font-weight:100;font-size:.8rem}
+#pageIntro .pageBread a{color:#fdb827}
 #footMap{padding-top:0;padding-bottom:0}
+@media screen and (max-width:767px){#masthead .navbar-collapse .navbar-nav{padding-bottom:2rem}
+#masthead .navbar-collapse .nav-item{text-align:center}
+}
