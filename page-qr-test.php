@@ -20,8 +20,18 @@ get_header();
 
 							<h2>QR Code</h2>
 
+              <h3>First</h3>
+              [qrlink size=400 postlink="http://scripthere.com"]
 
+              <h3>Second</h3>
+              [qrcontent] Welcome to scripthere.com [/qrcontent]
 
+              <h3>Third</h3>
+              [qrcontact size=250 to=narendra@narendra.com sub=Enquiry body="Your message"]
+
+              <h4>Fourth</h4>
+              [qrmessage size=250 to=9590123456 msg="Your message"]
+              
 						</div>
 						<div class="col-md-4">
 							<?php get_sidebar(); ?>

@@ -85,7 +85,7 @@ if ( ! function_exists( 'ulp_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Post_Formats
 		 */
-		add_theme_support( 'post-formats', array( 'video', 'gallery', 'audio' ) );		
+		add_theme_support( 'post-formats', array( 'video', 'gallery', 'audio' ) );
 	}
 endif;
 add_action( 'after_setup_theme', 'ulp_setup' );
@@ -225,3 +225,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Like formatter
  */
 require get_template_directory() . '/inc/wp_ulike_format.php';
+
+
+
+/**
+ * THIS IS JUST FOR TESTING BIT-CHIT
+ */
+require get_template_directory() . '/inc/script_quick_response_code.php';
